@@ -47,7 +47,8 @@ dialog {
   flex-wrap: wrap;
   height: calc(100vh - 10rem);
   margin: 5rem;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   width: calc(100% - 10rem);
   li {
     height: 33.333%;

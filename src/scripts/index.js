@@ -2,6 +2,7 @@ import '../styles/index.css';
 
 const DIALOG = document.getElementById('dialog');
 const DIALOG_IMAGE = dialog.querySelector('img');
+const ITEMS_LIST = document.querySelector('ul');
 
 window.onload = () => {
   const LAST_ITEM = document.querySelector('.item:last-of-type');
@@ -27,10 +28,24 @@ DIALOG_IMAGE.addEventListener('click', () => {
 });
 
 document.addEventListener('click', (e) => {
-  const TARGET = DIALOG_IMAGE.contains(e.target);
-  if (DIALOG.classList.contains('open') && !TARGET) {
+  const TARGET_1 = DIALOG_IMAGE.contains(e.target);
+  const TARGET_2 = ITEMS_LIST.contains(e.target);
+  if (DIALOG.classList.contains('open') && !TARGET_1) {
     return DIALOG.classList.remove('open');
-  } else {
+  } else if (TARGET_2) {
     return DIALOG.classList.add('open');
   }
 });
+
+const keyPressed = (e) => {
+  switch (e.keyCode) {
+    case 37:
+      console.log('Left');
+      break;
+    case 39:
+      console.log('Right');
+      break;
+  }
+};
+
+document.onkeyup = keyPressed;
