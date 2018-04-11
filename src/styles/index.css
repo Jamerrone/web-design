@@ -22,10 +22,11 @@ html {
 }
 
 body {
+  background-color: #eee;
+  color: #222;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.6rem;
-  color: #222;
 }
 
 main {
@@ -39,17 +40,25 @@ li {
   list-style: none;
 }
 
+ul a:hover,
+ul a:focus,
+img.active {
+  filter: brightness(75%);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
 ul,
 dialog {
+  background-color: #fff;
   border-radius: 30rem;
-  border: 1px solid #eee;
   box-shadow: 0 4px 9px 0 rgba(30, 59, 91, 0.1);
   display: flex;
   flex-wrap: wrap;
   height: calc(100vh - 10rem);
   margin: 5rem;
-  overflow-y: scroll;
   overflow-x: hidden;
+  overflow-y: scroll;
   width: calc(100% - 10rem);
   li {
     height: 33.333%;
@@ -68,14 +77,16 @@ dialog {
 }
 
 dialog {
-  background: transparent;
+  background: #fff;
+  border: none;
   flex-direction: column;
   margin: 0 auto;
   opacity: 0;
-  visibility: hidden;
   overflow: hidden;
   transition: visibility 0.2s ease-in-out, opacity 0.2s ease-in-out,
     border-radius 0.3s ease-in-out 0.5s;
+  visibility: hidden;
+  z-index: 5;
   img {
     cursor: zoom-in;
     opacity: 0;
@@ -83,11 +94,53 @@ dialog {
     width: 100%;
   }
   article {
-    background-color: #fff;
+    box-shadow: inset 0 -1px 0 0 #eee, inset 1px 0 0 #eee;
     cursor: zoom-out;
-    height: 100%;
+    height: 50%;
+    overflow-y: scroll;
     padding: 3rem;
+    position: relative;
     width: 50%;
+    &::after {
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.75) 100%
+      );
+      bottom: 0;
+      content: "";
+      height: 2.55rem;
+      left: 0;
+      position: sticky;
+      width: 100%;
+    }
+  }
+  aside {
+    cursor: zoom-out;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50%;
+    overflow-y: scroll;
+    position: relative;
+    width: 50%;
+    &::after {
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.75) 100%
+      );
+      bottom: 0;
+      content: "";
+      height: 2.55rem;
+      left: 0;
+      position: sticky;
+      width: 100%;
+    }
+    img {
+      cursor: pointer;
+      height: 33.333%;
+      width: 50%;
+    }
   }
   p,
   h2 {
@@ -96,17 +149,17 @@ dialog {
   }
   h2 {
     font-size: 4rem;
-    margin-bottom: 3rem;
     line-height: normal;
+    margin-bottom: 3rem;
   }
   p {
     margin-bottom: 1.25rem;
   }
   &.open {
-    visibility: visible;
     border-bottom-right-radius: 5rem;
     border-top-right-radius: 5rem;
     opacity: 1;
+    visibility: visible;
     img {
       width: 50%;
       &.fullWidth {
@@ -123,13 +176,26 @@ dialog {
 }
 
 #loader {
-  position: fixed;
-  background-color: #ddd;
+  align-items: center;
+  background-color: #fff;
   border-radius: 30rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: calc(100vh - 10rem);
-  width: calc(100% - 10rem);
+  justify-content: center;
   left: 5rem;
+  position: fixed;
+  width: calc(100% - 10rem);
+}
+
+.fadeIn {
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
