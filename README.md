@@ -4,6 +4,8 @@ The latest working demo can be found [here]().
 
 **\*WARNING:** This prototype was built and tested on FireFox Only, issues and bugs are to be expected, especially while using other browsers. For a better viewing experience please consider using FireFox. Feel free to create an issue and/or pull request if you run into anything out of the ordinary.\*
 
+![Cover Image](./cover.gif)
+
 ## Assignment Information
 
 For this assignment, I had to build a prototype in two days using three different design principles from this [article]() of my own choice. In my case I chose:
