@@ -4,7 +4,9 @@ The latest working demo can be found [here]().
 
 **\*WARNING:** This prototype was built and tested on FireFox Only, issues and bugs are to be expected, especially while using other browsers. For a better viewing experience please consider using FireFox. Feel free to create an issue and/or pull request if you run into anything out of the ordinary.\*
 
-![Cover Image](./cover.gif)
+<p align="center">
+  <img src="./cover.gif"/>
+</p>
 
 ## Assignment Information
 
