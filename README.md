@@ -30,9 +30,7 @@ This went quite easy, I mainly have two screens, each having there own primary a
 
 At first I founded it quite hard to balance my hierarchie, especially around text elemtns. The main content of my concept are images witch by nature atracht way more attention to themselfs then text elements do. They are big, fun and full of colors. In the end, I chose to keep my main focal points on the images themselfs while also tring to call attention to the headers.
 
-## Feedback Round 1
-
-## Feedback Round 2
+## Testers Feedback
 
 ## Future Plans
 
