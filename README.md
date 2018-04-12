@@ -1,6 +1,6 @@
 # Web Design: The Pill
 
-The latest working demo can be found [here]().
+The latest working demo can be found [here](https://jamerrone.github.io/web-design/dist).
 
 **\*WARNING:** This prototype was built and tested on FireFox Only, issues and bugs are to be expected, especially while using other browsers. For a better viewing experience please consider using FireFox. Feel free to create an issue and/or pull request if you run into anything out of the ordinary.\*
 
@@ -10,7 +10,7 @@ The latest working demo can be found [here]().
 
 ## Assignment Information
 
-For this assignment, I had to build a prototype in two days using three different design principles from this [article]() of my own choice. In my case I chose:
+For this assignment, I had to build a prototype in two days using three different design principles from this [article](http://bokardo.com/principles-of-user-interface-design/) of my own choice. In my case I chose:
 
 * Clarity is job #1
 * One primary action per screen
