@@ -2,6 +2,21 @@
 
 The latest working demo can be found [here](https://jamerrone.github.io/web-design/dist/index.html).
 
+<!-- TOC -->
+
+* [Web Design: The Pill](#web-design-the-pill)
+  * [Assignment Information](#assignment-information)
+    * [Clarity is job #1](#clarity-is-job-1)
+    * [One primary action per screen](#one-primary-action-per-screen)
+    * [Strong visual hierarchies work best](#strong-visual-hierarchies-work-best)
+  * [Testers Feedback](#testers-feedback)
+    * [Implemented feedback](#implemented-feedback)
+  * [Future Plans](#future-plans)
+  * [F.A.Q](#faq)
+  * [Image Source](#image-source)
+
+<!-- /TOC -->
+
 **\*WARNING:** This prototype was built and tested on FireFox Only, issues and bugs are to be expected, especially while using other browsers. For a better viewing experience please consider using FireFox. Feel free to create an issue and/or pull request if you run into anything out of the ordinary.\*
 
 <p align="center">
@@ -31,6 +46,18 @@ This went quite easy, I mainly have two screens, each having there own primary a
 At first I founded it quite hard to balance my hierarchie, especially around text elemtns. The main content of my concept are images witch by nature atracht way more attention to themselfs then text elements do. They are big, fun and full of colors. In the end, I chose to keep my main focal points on the images themselfs while also tring to call attention to the headers.
 
 ## Testers Feedback
+
+I have tested my prototype with 3 different people, two student developers like myself and a random girl. Most of the given feedback was implemented, however some feedback where either out of scope for this project or I simply didn't have enough time to work on them. Some of the not implemented feedback can be found under "Future Plans".
+
+### Implemented feedback
+
+Most testers were very pleased with my overview page, especially with its animations, unique shape, and colorful images. The only feedback I received for this page was the boring and low contrast white background. Especially when I had an odd number of images, the shape should be almost invisible because the low contrast border and box-shadow could not be seen on most non Mac monitors. Another feedback point was that I didn't have any hover or focus states for the clickable images, users were not really sure whether they were clickable or not. The only feedback was the cursor turning into a minifying glass. This is also fixed by now.
+
+![Feedback 1](./feedback1.png)
+
+The details page, however, had multiple problems. First of all, there was no visual hierarchy on the page. The titles were way too small for the large and impactful images. To create a better focal point and balance I decided to increased the font size by a lot. The next issue was the fact that most images dint have a lot of text-based information as seen below. The full viewport space was way too much so I decided to split it into two different sections, not knowing what to do with the new space, I decided to ask for more feedback. In the end, I decided to show the entire gallery again so that users could swap between images with fluid and fast motions. I could, for example, display the newest images or the most popular images on this section, but for now, I will just show every item.
+
+![Feedback 2](./feedback2.png)
 
 ## Future Plans
 
