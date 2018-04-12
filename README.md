@@ -1,6 +1,6 @@
 # Web Design: The Pill
 
-The latest working demo can be found [here](https://jamerrone.github.io/web-design/dist).
+The latest working demo can be found [here](https://jamerrone.github.io/web-design/dist/index.html).
 
 **\*WARNING:** This prototype was built and tested on FireFox Only, issues and bugs are to be expected, especially while using other browsers. For a better viewing experience please consider using FireFox. Feel free to create an issue and/or pull request if you run into anything out of the ordinary.\*
 
