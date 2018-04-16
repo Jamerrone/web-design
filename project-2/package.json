@@ -29,6 +29,8 @@
     "cssnano": "^3.10.0",
     "eslint": "^4.19.1",
     "eslint-config-google": "^0.9.1",
+    "hyperscript": "^2.0.2",
+    "hyperscript-helpers": "^3.0.3",
     "npm-run-all": "^4.1.2",
     "postcss-cssnext": "^3.1.0",
     "precss": "^3.1.2",
