@@ -1,1 +1,229 @@
-::-webkit-scrollbar{display:none}[hidden]{display:none;opacity:0;visibility:hidden}*,:after,:before{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}html{overflow:-moz-scrollbars-none}body{background-color:#eee;color:#222;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;line-height:25.6px;line-height:1.6rem}main{height:100%;margin:0 auto;width:100vw}li,ul{list-style:none}img.active,ul a:focus,ul a:hover{filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.75" /><feFuncG type="linear" slope="0.75" /><feFuncB type="linear" slope="0.75" /></feComponentTransfer></filter></svg>#filter');filter:brightness(75%);outline:none;transition:all .2s ease-in-out}dialog,ul{background-color:#fff;border-radius:30rem;box-shadow:0 4px 9px 0 rgba(30,59,91,.1);display:flex;flex-wrap:wrap;height:calc(100vh - 10rem);margin:80px;margin:5rem;overflow-x:hidden;overflow-y:scroll;width:calc(100% - 10rem)}dialog li,ul li{height:33.333%;width:50%}dialog li a,ul li a{cursor:zoom-in}dialog img,ul img{display:block;height:100%;object-fit:cover;object-position:center center;width:100%}dialog{background:#fff;border:none;flex-direction:column;margin:0 auto;opacity:0;overflow:hidden;transition:visibility .2s ease-in-out,opacity .2s ease-in-out,border-radius .3s ease-in-out .5s;visibility:hidden;z-index:1}dialog img{cursor:zoom-in;opacity:0;transition:opacity .2s ease-in-out,width .3s ease-in-out .5s;width:100%}dialog article{box-shadow:inset 0 -1px 0 0 #eee,inset 1px 0 0 #eee;cursor:zoom-out;height:50%;overflow-y:scroll;padding:48px;padding:3rem;position:relative;width:50%}dialog article:after{background:linear-gradient(180deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,.75));bottom:0;content:"";height:40.8px;height:2.55rem;left:0;position:sticky;width:100%}dialog aside{cursor:zoom-out;display:flex;flex-wrap:wrap;height:50%;overflow-y:scroll;position:relative;width:50%}dialog aside:after{background:linear-gradient(180deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,.75));bottom:0;content:"";height:40.8px;height:2.55rem;left:0;position:sticky;width:100%}dialog aside img{cursor:pointer;height:33.333%;width:50%}dialog h2,dialog p{opacity:0;transition:opacity .2s ease-in-out .5s}dialog h2{font-size:64px;font-size:4rem;line-height:normal;margin-bottom:48px;margin-bottom:3rem}dialog p{margin-bottom:20px;margin-bottom:1.25rem}dialog.open{border-bottom-right-radius:80px;border-bottom-right-radius:5rem;border-top-right-radius:80px;border-top-right-radius:5rem;opacity:1;visibility:visible}dialog.open img{width:50%}dialog.open img.fullWidth{cursor:zoom-out;width:100%}dialog.open h2,dialog.open img,dialog.open p{opacity:1}#loader{align-items:center;background-color:#fff;border-radius:30rem;display:flex;height:calc(100vh - 10rem);justify-content:center;left:80px;left:5rem;position:fixed;width:calc(100% - 10rem)}.fadeIn{animation:a .2s ease-in-out}@keyframes a{0%{opacity:0}to{opacity:1}}
+::-webkit-scrollbar {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow: -moz-scrollbars-none;
+}
+
+body {
+  background-color: #eee;
+  color: #222;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 25.6px;
+  line-height: 1.6rem;
+}
+
+main {
+  height: 100%;
+  margin: 0 auto;
+  width: 100vw;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+ul a:hover,
+ul a:focus,
+img.active {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.75" /><feFuncG type="linear" slope="0.75" /><feFuncB type="linear" slope="0.75" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(75%);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+ul,
+dialog {
+  background-color: #fff;
+  border-radius: 30rem;
+  box-shadow: 0 4px 9px 0 rgba(30, 59, 91, .1);
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100vh - 10rem);
+  margin: 80px;
+  margin: 5rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: calc(100% - 10rem);
+}
+
+ul li, dialog li {
+    height: 33.333%;
+    width: 50%;
+  }
+
+ul li a, dialog li a {
+      cursor: zoom-in;
+    }
+
+ul img, dialog img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+  }
+
+dialog {
+  background: #fff;
+  border: none;
+  flex-direction: column;
+  margin: 0 auto;
+  opacity: 0;
+  overflow: hidden;
+  transition: visibility 0.2s ease-in-out, opacity 0.2s ease-in-out,
+    border-radius 0.3s ease-in-out 0.5s;
+  visibility: hidden;
+  z-index: 5;
+}
+
+dialog img {
+    cursor: zoom-in;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out, width 0.3s ease-in-out 0.5s;
+    width: 100%;
+  }
+
+dialog article {
+    box-shadow: inset 0 -1px 0 0 #eee, inset 1px 0 0 #eee;
+    cursor: zoom-out;
+    height: 50%;
+    overflow-y: scroll;
+    padding: 48px;
+    padding: 3rem;
+    position: relative;
+    width: 50%
+  }
+
+dialog article::after {
+  background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, .75) 100%
+      );
+  bottom: 0;
+  content: "";
+  height: 40.8px;
+  height: 2.55rem;
+  left: 0;
+  position: sticky;
+  width: 100%;
+}
+
+dialog aside {
+    cursor: zoom-out;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50%;
+    overflow-y: scroll;
+    position: relative;
+    width: 50%
+  }
+
+dialog aside::after {
+  background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, .75) 100%
+      );
+  bottom: 0;
+  content: "";
+  height: 40.8px;
+  height: 2.55rem;
+  left: 0;
+  position: sticky;
+  width: 100%;
+}
+
+dialog aside img {
+      cursor: pointer;
+      height: 33.333%;
+      width: 50%;
+}
+
+dialog p,
+  dialog h2 {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out 0.5s;
+  }
+
+dialog h2 {
+    font-size: 64px;
+    font-size: 4rem;
+    line-height: normal;
+    margin-bottom: 48px;
+    margin-bottom: 3rem;
+  }
+
+dialog p {
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+  }
+
+dialog.open {
+  border-bottom-right-radius: 80px;
+  border-bottom-right-radius: 5rem;
+  border-top-right-radius: 80px;
+  border-top-right-radius: 5rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+dialog.open img {
+      width: 50%;
+}
+
+dialog.open img.fullWidth {
+  cursor: zoom-out;
+  width: 100%;
+}
+
+dialog.open img,
+    dialog.open p,
+    dialog.open h2 {
+      opacity: 1;
+}
+
+#loader {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 30rem;
+  display: flex;
+  height: calc(100vh - 10rem);
+  justify-content: center;
+  left: 80px;
+  left: 5rem;
+  position: fixed;
+  width: calc(100% - 10rem);
+}
+
+.fadeIn {
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
