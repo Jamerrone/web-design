@@ -7,10 +7,11 @@
 }
 
 body {
-  scroll-behavior: smooth;
+  color: #212121;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue;
   line-height: 25.6px;
   line-height: 1.6rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue;
+  scroll-behavior: smooth;
 }
 
 li {
@@ -23,41 +24,54 @@ p {
 }
 
 main {
-  width: 75%;
+  grid-column-start: 2;
+  padding: 16px;
+  padding: 1rem;
 }
 
 nav {
+  background-color: #212121;
+  height: 100vh;
+  padding: 16px;
+  padding: 1rem;
+  position: fixed;
   width: 25%;
 }
 
+nav li {
+    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
+  }
+
+nav a {
+    color: #fff;
+    text-decoration: none
+  }
+
+nav a.highlight {
+  background-color: yellow;
+  color: #212121;
+}
+
 .wrapper {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 25% auto;
 }
 
 .examples-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
   text-align: center;
 }
 
-.examples-list li {
-    padding: 8px;
-    padding: 0.5rem;
-    width: 25%;
-  }
-
 .examples-list button {
-    width: 100%;
     border-radius: 0;
+    border: 1px solid #212121;
     font: inherit;
-    border: 1px solid #212121
+    width: 100%
   }
 
 .examples-list button:last-of-type {
   border-top: none;
-}
-
-#mainNavigation {
-  position: fixed;
 }

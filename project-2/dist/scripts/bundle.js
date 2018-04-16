@@ -586,13 +586,13 @@
   }];
 
   var _hh = hh(hyperscript),
-      article = _hh.article,
-      h2 = _hh.h2,
-      p = _hh.p,
-      li = _hh.li,
       a = _hh.a,
-      ol = _hh.ol,
+      article = _hh.article,
       button = _hh.button,
+      h2 = _hh.h2,
+      li = _hh.li,
+      ol = _hh.ol,
+      p = _hh.p,
       span = _hh.span;
 
   var stringToID = function stringToID(s) {
@@ -602,7 +602,13 @@
   var generatePrinciplesList = function generatePrinciplesList(data) {
     var counter = 1;
     return data.forEach(function (principle) {
-      var elem = article({ id: stringToID(principle.name) }, [h2([span(counter), principle.name]), p(principle.body), ol('.examples-list')]);
+      var elem = article({ id: stringToID(principle.name) }, [h2(counter + ' ' + principle.name), p(principle.body), ol('.examples-list')]);
+      elem.addEventListener('mouseenter', function () {
+        document.querySelectorAll('nav a').forEach(function (navItem) {
+          navItem.classList.remove('highlight');
+        });
+        document.querySelector('[href="#' + elem.id + '"]').classList.add('highlight');
+      });
       document.querySelector('main').appendChild(elem);
       counter++;
     });
@@ -629,5 +635,76 @@
   generateMainNavigation(principlesData);
   generatePrinciplesList(principlesData);
   generateExamples(examplesData);
+
+  // // cache the navigation links
+  // let $navigationLinks = $('#navigation > ul > li > a');
+  // // cache (in reversed order) the sections
+  // let $sections = $(
+  //   $('.section')
+  //     .get()
+  //     .reverse()
+  // );
+
+  // // map each section id to their corresponding navigation link
+  // let sectionIdTonavigationLink = {};
+  // $sections.each(function() {
+  //   let id = $(this).attr('id');
+  //   sectionIdTonavigationLink[id] = $(
+  //     '#navigation > ul > li > a[href=#' + id + ']'
+  //   );
+  // });
+
+  // // throttle function, enforces a minimum time interval
+  // function throttle(fn, interval) {
+  //   let lastCall, timeoutId;
+  //   return function() {
+  //     let now = new Date().getTime();
+  //     if (lastCall && now < lastCall + interval) {
+  //       // if we are inside the interval we wait
+  //       clearTimeout(timeoutId);
+  //       timeoutId = setTimeout(function() {
+  //         lastCall = now;
+  //         fn.call();
+  //       }, interval - (now - lastCall));
+  //     } else {
+  //       // otherwise, we directly call the function
+  //       lastCall = now;
+  //       fn.call();
+  //     }
+  //   };
+  // }
+
+  // function highlightNavigation() {
+  //   // get the current vertical position of the scroll bar
+  //   let scrollPosition = $(window).scrollTop();
+
+  //   // iterate the sections
+  //   $sections.each(function() {
+  //     let currentSection = $(this);
+  //     // get the position of the section
+  //     let sectionTop = currentSection.offset().top;
+
+  //     // if the user has scrolled over the top of the section
+  //     if (scrollPosition >= sectionTop) {
+  //       // get the section id
+  //       let id = currentSection.attr('id');
+  //       // get the corresponding navigation link
+  //       let $navigationLink = sectionIdTonavigationLink[id];
+  //       // if the link is not active
+  //       if (!$navigationLink.hasClass('active')) {
+  //         // remove .active class from all the links
+  //         $navigationLinks.removeClass('active');
+  //         // add .active class to the current link
+  //         $navigationLink.addClass('active');
+  //       }
+  //       // we have found our section, so we return false to exit the each loop
+  //       return false;
+  //     }
+  //   });
+  // }
+
+  // $(window).scroll(throttle(highlightNavigation, 100));
+
+  // // if you don't want to throttle the function use this instead:
 
 }());
