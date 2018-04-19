@@ -4,7 +4,7 @@ import hh from 'hyperscript-helpers';
 import principlesData from './modules/principles';
 import examplesData from './modules/examples';
 
-const {a, article, button, h2, li, ol, p, span} = hh(h);
+const {a, article, button, h2, h3, li, ol, p, span, img} = hh(h);
 
 const stringToID = (s) => {
   return s
@@ -17,16 +17,10 @@ const generatePrinciplesList = (data) => {
   let counter = 1;
   return data.forEach((principle) => {
     const elem = article({id: stringToID(principle.name)}, [
-      h2(`${counter} ${principle.name}`),
+      h2([span(`${counter}`), `${principle.name}`]),
       p(principle.body),
       ol('.examples-list'),
     ]);
-    elem.addEventListener('mouseenter', () => {
-      document.querySelectorAll('nav a').forEach((navItem) => {
-        navItem.classList.remove('highlight');
-      });
-      document.querySelector(`[href="#${elem.id}"]`).classList.add('highlight');
-    });
     document.querySelector('main').appendChild(elem);
     counter++;
   });
@@ -50,7 +44,7 @@ const generateExamples = (data) => {
   data.forEach((example) => {
     example.principles.forEach((principle) => {
       const test = li([
-        a({href: example.repoUrl}, example.name),
+        a({href: example.repoUrl}, img({src: example.thumbnail})),
         button(`Likes: ${principle.likes}`),
         button(`Dislikes: ${principle.dislikes}`),
       ]);
@@ -64,75 +58,59 @@ const generateExamples = (data) => {
 
 generateMainNavigation(principlesData);
 generatePrinciplesList(principlesData);
-generateExamples(examplesData);
+// generateExamples(examplesData);
 
-// // cache the navigation links
-// let $navigationLinks = $('#navigation > ul > li > a');
-// // cache (in reversed order) the sections
-// let $sections = $(
-//   $('.section')
-//     .get()
-//     .reverse()
-// );
+const calcVisibilityForElem = (elem) => {
+  const windowHeight = window.innerHeight;
+  const docScroll = window.pageYOffset || document.documentElement.scrollTop;
+  const divPosition = elem.offsetTop;
+  const divHeight = elem.offsetHeight;
+  const hiddenBefore = docScroll - divPosition;
+  const hiddenAfter = divPosition + divHeight - (docScroll + windowHeight);
 
-// // map each section id to their corresponding navigation link
-// let sectionIdTonavigationLink = {};
-// $sections.each(function() {
-//   let id = $(this).attr('id');
-//   sectionIdTonavigationLink[id] = $(
-//     '#navigation > ul > li > a[href=#' + id + ']'
-//   );
-// });
+  if (
+    docScroll > divPosition + divHeight ||
+    divPosition > docScroll + windowHeight
+  ) {
+    return 0;
+  } else {
+    let result = 100;
 
-// // throttle function, enforces a minimum time interval
-// function throttle(fn, interval) {
-//   let lastCall, timeoutId;
-//   return function() {
-//     let now = new Date().getTime();
-//     if (lastCall && now < lastCall + interval) {
-//       // if we are inside the interval we wait
-//       clearTimeout(timeoutId);
-//       timeoutId = setTimeout(function() {
-//         lastCall = now;
-//         fn.call();
-//       }, interval - (now - lastCall));
-//     } else {
-//       // otherwise, we directly call the function
-//       lastCall = now;
-//       fn.call();
-//     }
-//   };
-// }
+    if (hiddenBefore > 0) {
+      result -= hiddenBefore * 100 / divHeight;
+    }
 
-// function highlightNavigation() {
-//   // get the current vertical position of the scroll bar
-//   let scrollPosition = $(window).scrollTop();
+    if (hiddenAfter > 0) {
+      result -= hiddenAfter * 100 / divHeight;
+    }
 
-//   // iterate the sections
-//   $sections.each(function() {
-//     let currentSection = $(this);
-//     // get the position of the section
-//     let sectionTop = currentSection.offset().top;
+    return result;
+  }
+};
 
-//     // if the user has scrolled over the top of the section
-//     if (scrollPosition >= sectionTop) {
-//       // get the section id
-//       let id = currentSection.attr('id');
-//       // get the corresponding navigation link
-//       let $navigationLink = sectionIdTonavigationLink[id];
-//       // if the link is not active
-//       if (!$navigationLink.hasClass('active')) {
-//         // remove .active class from all the links
-//         $navigationLinks.removeClass('active');
-//         // add .active class to the current link
-//         $navigationLink.addClass('active');
-//       }
-//       // we have found our section, so we return false to exit the each loop
-//       return false;
-//     }
-//   });
-// }
+const calcVisibilityForAllArticles = () => {
+  document.querySelectorAll('article').forEach((item) => {
+    const top = calcVisibilityForElem(item);
+    if (top !== 0) {
+      item.querySelector('span').style.transform = `translateY(${Math.floor(
+        top * 1.5
+      )}px)`;
+    }
+    if (top >= 80) {
+      const navItem = document.querySelector(`[href="#${item.id}"]`);
+      document.querySelectorAll('nav a').forEach((navItem) => {
+        navItem.classList.remove('highlight');
+      });
+      navItem.classList.add('highlight');
+      navItem.focus();
+    }
+  });
+};
 
-// $(window).scroll(throttle(highlightNavigation, 100));
+window.onload = () => {
+  calcVisibilityForAllArticles();
+};
 
-// // if you don't want to throttle the function use this instead:
+document.onscroll = () => {
+  calcVisibilityForAllArticles();
+};
