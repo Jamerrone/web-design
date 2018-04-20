@@ -503,17 +503,261 @@
     body: 'As in most design disciplines, interface design is successful when people are using what you\'ve designed. Like a beautiful chair that is uncomfortable to sit in, design has failed when people choose not to use it. Therefore, interface design can be as much about creating an environment for use as it is creating an artifact worth using. It is not enough for an interface to satisfy the ego of its designer: it must be used!'
   }];
 
+  var examplesData = [{
+    name: 'Jamerrone',
+    repoUrl: 'https://github.com/Jamerrone/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principles: [{
+      name: 'clarity-is-job-1',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'one-primary-action-per-screen',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'strong-visual-hierarchies-work-best',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }]
+  }, {
+    name: 'Jajan20',
+    repoUrl: 'https://github.com/jajan20/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principles: [{
+      name: 'clarity-is-job-1',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'one-primary-action-per-screen',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'strong-visual-hierarchies-work-best',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }]
+  }, {
+    name: 'RobinFrugte97',
+    repoUrl: 'https://github.com/RobinFrugte97/web-design/',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principles: [{
+      name: 'one-primary-action-per-screen',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'appearance-follows-behavior',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'strong-visual-hierarchies-work-best',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }]
+  }, {
+    name: 'Meesrutten',
+    repoUrl: 'https://github.com/meesrutten/web-design/',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principles: [{
+      name: 'interfaces-exist-to-enable-interaction',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'one-primary-action-per-screen',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'progressive-disclosure',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }]
+  }, {
+    name: 'Chanakarn',
+    repoUrl: 'https://github.com/niyorn/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principles: [{
+      name: 'clarity-is-job-1',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'strong-visual-hierarchies-work-best',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'smart-organization-reduces-cognitive-load',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }]
+  }, {
+    name: 'Sam Guliker',
+    repoUrl: 'https://github.com/sam-guliker/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principles: [{
+      name: 'clarity-is-job-1',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'one-primary-action-per-screen',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'consistency-matters',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }]
+  }, {
+    name: 'Vriesm060',
+    repoUrl: 'https://github.com/vriesm060/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principles: [{
+      name: 'clarity-is-job-1',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'strong-visual-hierarchies-work-best',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'smart-organization-reduces-cognitive-load',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }]
+  }, {
+    name: 'NielsFS',
+    repoUrl: 'https://github.com/NielsFS/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principles: [{
+      name: 'clarity-is-job-1',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'consistency-matters',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'smart-organization-reduces-cognitive-load',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }]
+  }, {
+    name: 'Dipsaus9',
+    repoUrl: 'https://github.com/dipsaus9/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principles: [{
+      name: 'clarity-is-job-1',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'consistency-matters',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'provide-a-natural-next-step',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }]
+  }, {
+    name: 'Yoeripasmans',
+    repoUrl: 'https://github.com/yoeripasmans/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principles: [{
+      name: 'clarity-is-job-1',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'strong-visual-hierarchies-work-best',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'progressive-disclosure',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }]
+  }, {
+    name: 'Leoniesmits',
+    repoUrl: 'https://github.com/leoniesmits/web-design/',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principles: [{
+      name: 'keep-users-in-control',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'strong-visual-hierarchies-work-best',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'progressive-disclosure',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }]
+  }, {
+    name: 'Japgroevemaker',
+    repoUrl: 'https://github.com/japgroevemaker/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principles: [{
+      name: 'one-primary-action-per-screen',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'provide-a-natural-next-step',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }, {
+      name: 'appearance-follows-behavior',
+      description: '',
+      likes: Math.floor(Math.random() * 100) + 1,
+      dislikes: Math.floor(Math.random() * 100) + 1
+    }]
+  }];
+
   var _hh = hh(hyperscript),
       a = _hh.a,
       article = _hh.article,
       button = _hh.button,
       h2 = _hh.h2,
-      h3 = _hh.h3,
+      img = _hh.img,
       li = _hh.li,
       ol = _hh.ol,
       p = _hh.p,
-      span = _hh.span,
-      img = _hh.img;
+      span = _hh.span;
+
+  var articles = [];
+  var navItems = [];
 
   var stringToID = function stringToID(s) {
     return s.replace(/\s+/g, '-').replace(/[`~!@#$%^&*()|+\=?;:'",.<>\{\}\[\]\\\/]/gi, '').toLowerCase();
@@ -522,8 +766,11 @@
   var generatePrinciplesList = function generatePrinciplesList(data) {
     var counter = 1;
     return data.forEach(function (principle) {
-      var elem = article({ id: stringToID(principle.name) }, [h2([span('' + counter), '' + principle.name]), p(principle.body), ol('.examples-list')]);
+      var elem = article({
+        id: stringToID(principle.name)
+      }, [h2([span('' + counter), '' + principle.name]), p(principle.body), ol('.examples-list')]);
       document.querySelector('main').appendChild(elem);
+      articles.push(elem);
       counter++;
     });
   };
@@ -531,15 +778,27 @@
   var generateMainNavigation = function generateMainNavigation(data) {
     var counter = 1;
     return data.forEach(function (principle) {
-      var elem = li(a({ href: '#' + stringToID(principle.name) }, counter + ' ' + principle.name));
+      var elem = li(a({
+        href: '#' + stringToID(principle.name)
+      }, counter + ' ' + principle.name));
       document.querySelector('#mainNavigation').appendChild(elem);
+      navItems.push(elem.querySelector('a'));
       counter++;
+    });
+  };
+
+  var generateExamples = function generateExamples(data) {
+    data.forEach(function (example) {
+      example.principles.forEach(function (principle) {
+        var test = li([a({ href: example.repoUrl }, img({ src: example.thumbnail })), button('Likes: ' + principle.likes), button('Dislikes: ' + principle.dislikes)]);
+        document.getElementById(principle.name).querySelector('.examples-list').appendChild(test);
+      });
     });
   };
 
   generateMainNavigation(principlesData);
   generatePrinciplesList(principlesData);
-  // generateExamples(examplesData);
+  generateExamples(examplesData);
 
   var calcVisibilityForElem = function calcVisibilityForElem(elem) {
     var windowHeight = window.innerHeight;
@@ -566,29 +825,76 @@
     }
   };
 
-  var calcVisibilityForAllArticles = function calcVisibilityForAllArticles() {
-    document.querySelectorAll('article').forEach(function (item) {
-      var top = calcVisibilityForElem(item);
-      if (top !== 0) {
-        item.querySelector('span').style.transform = 'translateY(' + Math.floor(top * 1.5) + 'px)';
+  var animatePrincipleNrForAllArticles = function animatePrincipleNrForAllArticles() {
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+      for (var _iterator = articles[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var item = _step.value;
+
+        var top = calcVisibilityForElem(item);
+        if (top !== 0) {
+          if (!item.span) {
+            item.span = item.querySelector('span');
+          }
+          item.span.style.transform = 'translateY(' + Math.floor(top * 2) + 'px)';
+        }
+        if (top >= 65) {
+          if (!item.navItem) {
+            item.navItem = document.querySelector('[href="#' + item.id + '"]');
+          }
+          var _iteratorNormalCompletion2 = true;
+          var _didIteratorError2 = false;
+          var _iteratorError2 = undefined;
+
+          try {
+            for (var _iterator2 = navItems[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+              var navItem = _step2.value;
+
+              navItem.classList.remove('highlight');
+            }
+          } catch (err) {
+            _didIteratorError2 = true;
+            _iteratorError2 = err;
+          } finally {
+            try {
+              if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                _iterator2.return();
+              }
+            } finally {
+              if (_didIteratorError2) {
+                throw _iteratorError2;
+              }
+            }
+          }
+
+          item.navItem.classList.add('highlight');
+          item.navItem.focus();
+        }
       }
-      if (top >= 80) {
-        var navItem = document.querySelector('[href="#' + item.id + '"]');
-        document.querySelectorAll('nav a').forEach(function (navItem) {
-          navItem.classList.remove('highlight');
-        });
-        navItem.classList.add('highlight');
-        navItem.focus();
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion && _iterator.return) {
+          _iterator.return();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
+        }
       }
-    });
+    }
   };
 
-  window.onload = function () {
-    calcVisibilityForAllArticles();
+  var animationLoop = function animationLoop() {
+    animatePrincipleNrForAllArticles();
+    requestAnimationFrame(animationLoop);
   };
 
-  document.onscroll = function () {
-    calcVisibilityForAllArticles();
-  };
+  requestAnimationFrame(animationLoop);
 
 }());

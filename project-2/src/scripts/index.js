@@ -4,7 +4,9 @@ import hh from 'hyperscript-helpers';
 import principlesData from './modules/principles';
 import examplesData from './modules/examples';
 
-const {a, article, button, h2, h3, li, ol, p, span, img} = hh(h);
+const {a, article, button, h2, img, li, ol, p, span} = hh(h);
+const articles = [];
+const navItems = [];
 
 const stringToID = (s) => {
   return s
@@ -16,12 +18,18 @@ const stringToID = (s) => {
 const generatePrinciplesList = (data) => {
   let counter = 1;
   return data.forEach((principle) => {
-    const elem = article({id: stringToID(principle.name)}, [
-      h2([span(`${counter}`), `${principle.name}`]),
-      p(principle.body),
-      ol('.examples-list'),
-    ]);
+    const elem = article(
+      {
+        id: stringToID(principle.name),
+      },
+      [
+        h2([span(`${counter}`), `${principle.name}`]),
+        p(principle.body),
+        ol('.examples-list'),
+      ]
+    );
     document.querySelector('main').appendChild(elem);
+    articles.push(elem);
     counter++;
   });
 };
@@ -31,11 +39,14 @@ const generateMainNavigation = (data) => {
   return data.forEach((principle) => {
     const elem = li(
       a(
-        {href: `#${stringToID(principle.name)}`},
+        {
+          href: `#${stringToID(principle.name)}`,
+        },
         `${counter} ${principle.name}`
       )
     );
     document.querySelector('#mainNavigation').appendChild(elem);
+    navItems.push(elem.querySelector('a'));
     counter++;
   });
 };
@@ -58,7 +69,7 @@ const generateExamples = (data) => {
 
 generateMainNavigation(principlesData);
 generatePrinciplesList(principlesData);
-// generateExamples(examplesData);
+generateExamples(examplesData);
 
 const calcVisibilityForElem = (elem) => {
   const windowHeight = window.innerHeight;
@@ -88,29 +99,31 @@ const calcVisibilityForElem = (elem) => {
   }
 };
 
-const calcVisibilityForAllArticles = () => {
-  document.querySelectorAll('article').forEach((item) => {
+const animatePrincipleNrForAllArticles = () => {
+  for (const item of articles) {
     const top = calcVisibilityForElem(item);
     if (top !== 0) {
-      item.querySelector('span').style.transform = `translateY(${Math.floor(
-        top * 1.5
-      )}px)`;
+      if (!item.span) {
+        item.span = item.querySelector('span');
+      }
+      item.span.style.transform = `translateY(${Math.floor(top * 2)}px)`;
     }
-    if (top >= 80) {
-      const navItem = document.querySelector(`[href="#${item.id}"]`);
-      document.querySelectorAll('nav a').forEach((navItem) => {
+    if (top >= 65) {
+      if (!item.navItem) {
+        item.navItem = document.querySelector(`[href="#${item.id}"]`);
+      }
+      for (const navItem of navItems) {
         navItem.classList.remove('highlight');
-      });
-      navItem.classList.add('highlight');
-      navItem.focus();
+      }
+      item.navItem.classList.add('highlight');
+      item.navItem.focus();
     }
-  });
+  }
 };
 
-window.onload = () => {
-  calcVisibilityForAllArticles();
+const animationLoop = () => {
+  animatePrincipleNrForAllArticles();
+  requestAnimationFrame(animationLoop);
 };
 
-document.onscroll = () => {
-  calcVisibilityForAllArticles();
-};
+requestAnimationFrame(animationLoop);
