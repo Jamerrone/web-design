@@ -833,15 +833,16 @@
       a = _hh.a,
       article = _hh.article,
       button = _hh.button,
+      div = _hh.div,
       h2 = _hh.h2,
       h3 = _hh.h3,
       img = _hh.img,
       li = _hh.li,
       ol = _hh.ol,
-      ul = _hh.ul,
       p = _hh.p,
       span = _hh.span,
-      strong = _hh.strong;
+      strong = _hh.strong,
+      ul = _hh.ul;
 
   var articles = [];
   var navItems = [];
@@ -853,12 +854,38 @@
     generateExamples(data.reverse());
   };
 
+  var sortExamplesByOld = function sortExamplesByOld(data) {
+    generateExamples(data);
+  };
+
+  var sortExamplesByLikes = function sortExamplesByLikes(data) {
+    generateExamples(data.sort(function (a, b) {
+      return b.likes - a.likes;
+    }));
+  };
+
+  var sortExamplesByDislikes = function sortExamplesByDislikes(data) {
+    generateExamples(data.sort(function (a, b) {
+      return b.dislikes - a.dislikes;
+    }));
+  };
+
+  var sortExamplesByScore = function sortExamplesByScore(data) {
+    generateExamples(data.sort(function (a, b) {
+      return b.likes - b.dislikes - (a.likes - a.dislikes);
+    }));
+  };
+
   var stringToID = function stringToID(s) {
     return s.replace(/\s+/g, '-').replace(/[`~!@#$%^&*()|+\=?;:'",.<>\{\}\[\]\\\/]/gi, '').toLowerCase();
   };
 
   var generatePrinciplesList = function generatePrinciplesList(data) {
     var counter = 1;
+
+    document.querySelector('main').appendChild(article({ id: 'introduction' }, [h2('Hello and Welcome 👋'), p('Students from the minor "Web Design" at Amsterdam\'s University of' + ' Applied Sciences were given the task to come up with intuitive ' + 'and pleasurable user interface solutions. The students were ' + 'given two days to create a demo version of their solutions. ' + 'These demos range from video players, to galleries, to booking ' + 'interfaces and much more. The demos are based on Joshua ' + 'Porter\'s "19 Principles of User Interface Design".'), div([button({ id: 'sortByNew' }, 'Sort by New'), button({ id: 'sortByOld' }, 'Sort by Old'), button({ id: 'sortByLikes' }, 'Sort by Likes'), button({ id: 'sortByDislikes' }, 'Sort by Dislikes'), button({ id: 'sortByScore' }, 'Sort by Score')])]));
+
+    articles.push(document.getElementById('introduction'));
 
     return data.forEach(function (principle) {
       var elem = article({
@@ -873,6 +900,8 @@
 
   var generateMainNavigation = function generateMainNavigation(data) {
     var counter = 1;
+
+    navItems.push(document.querySelector('[href="#introduction"]'));
 
     return data.forEach(function (principle) {
       var elem = li(a({
@@ -894,6 +923,9 @@
   };
 
   var generateExamples = function generateExamples(data) {
+    document.querySelectorAll('.examples-list').forEach(function (elem) {
+      elem.innerHTML = '';
+    });
     data.forEach(function (example) {
       var elem = li([a({ href: '#detailsPage' }, img({ src: example.thumbnail })), button('❤️ Like'), span('\uD83C\uDFC6 ' + (example.likes - example.dislikes)), button('💔 Dislike')]);
 
@@ -1043,6 +1075,31 @@
   generateMainNavigation(principlesData);
   generatePrinciplesList(principlesData);
   requestAnimationFrame(animationLoop);
-  sortExamplesByNew(examplesData);
+  sortExamplesByScore(examplesData);
+
+  document.getElementById('sortByNew').addEventListener('click', function () {
+    window.location.hash = '#clarity-is-job-1';
+    sortExamplesByNew(examplesData);
+  });
+
+  document.getElementById('sortByOld').addEventListener('click', function () {
+    window.location.hash = '#clarity-is-job-1';
+    sortExamplesByOld(examplesData);
+  });
+
+  document.getElementById('sortByLikes').addEventListener('click', function () {
+    window.location.hash = '#clarity-is-job-1';
+    sortExamplesByLikes(examplesData);
+  });
+
+  document.getElementById('sortByDislikes').addEventListener('click', function () {
+    window.location.hash = '#clarity-is-job-1';
+    sortExamplesByDislikes(examplesData);
+  });
+
+  document.getElementById('sortByScore').addEventListener('click', function () {
+    window.location.hash = '#clarity-is-job-1';
+    sortExamplesByScore(examplesData);
+  });
 
 }());

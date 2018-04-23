@@ -4,7 +4,21 @@ import hh from 'hyperscript-helpers';
 import principlesData from './modules/principles';
 import examplesData from './modules/examples';
 
-const {a, article, button, h2, h3, img, li, ol, ul, p, span, strong} = hh(h);
+const {
+  a,
+  article,
+  button,
+  div,
+  h2,
+  h3,
+  img,
+  li,
+  ol,
+  p,
+  span,
+  strong,
+  ul,
+} = hh(h);
 const articles = [];
 const navItems = [];
 
@@ -43,6 +57,32 @@ const stringToID = (s) => {
 const generatePrinciplesList = (data) => {
   let counter = 1;
 
+  document
+    .querySelector('main')
+    .appendChild(
+      article({id: 'introduction'}, [
+        h2('Hello and Welcome 👋'),
+        p(
+          'Students from the minor "Web Design" at Amsterdam\'s University of' +
+            ' Applied Sciences were given the task to come up with intuitive ' +
+            'and pleasurable user interface solutions. The students were ' +
+            'given two days to create a demo version of their solutions. ' +
+            'These demos range from video players, to galleries, to booking ' +
+            'interfaces and much more. The demos are based on Joshua ' +
+            'Porter\'s "19 Principles of User Interface Design".'
+        ),
+        div([
+          button({id: 'sortByNew'}, 'Sort by New'),
+          button({id: 'sortByOld'}, 'Sort by Old'),
+          button({id: 'sortByLikes'}, 'Sort by Likes'),
+          button({id: 'sortByDislikes'}, 'Sort by Dislikes'),
+          button({id: 'sortByScore'}, 'Sort by Score'),
+        ]),
+      ])
+    );
+
+  articles.push(document.getElementById('introduction'));
+
   return data.forEach((principle) => {
     const elem = article(
       {
@@ -63,6 +103,8 @@ const generatePrinciplesList = (data) => {
 
 const generateMainNavigation = (data) => {
   let counter = 1;
+
+  navItems.push(document.querySelector('[href="#introduction"]'));
 
   return data.forEach((principle) => {
     const elem = li(
@@ -89,6 +131,9 @@ const generateMainNavigation = (data) => {
 };
 
 const generateExamples = (data) => {
+  document.querySelectorAll('.examples-list').forEach((elem) => {
+    elem.innerHTML = '';
+  });
   data.forEach((example) => {
     const elem = li([
       a({href: '#detailsPage'}, img({src: example.thumbnail})),
@@ -221,4 +266,29 @@ document.onscroll = () => {
 generateMainNavigation(principlesData);
 generatePrinciplesList(principlesData);
 requestAnimationFrame(animationLoop);
-sortExamplesByNew(examplesData);
+sortExamplesByScore(examplesData);
+
+document.getElementById('sortByNew').addEventListener('click', () => {
+  window.location.hash = '#clarity-is-job-1';
+  sortExamplesByNew(examplesData);
+});
+
+document.getElementById('sortByOld').addEventListener('click', () => {
+  window.location.hash = '#clarity-is-job-1';
+  sortExamplesByOld(examplesData);
+});
+
+document.getElementById('sortByLikes').addEventListener('click', () => {
+  window.location.hash = '#clarity-is-job-1';
+  sortExamplesByLikes(examplesData);
+});
+
+document.getElementById('sortByDislikes').addEventListener('click', () => {
+  window.location.hash = '#clarity-is-job-1';
+  sortExamplesByDislikes(examplesData);
+});
+
+document.getElementById('sortByScore').addEventListener('click', () => {
+  window.location.hash = '#clarity-is-job-1';
+  sortExamplesByScore(examplesData);
+});
