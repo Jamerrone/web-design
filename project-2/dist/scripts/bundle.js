@@ -504,245 +504,329 @@
   }];
 
   var examplesData = [{
-    name: 'Jamerrone',
+    username: 'Jamerrone',
     repoUrl: 'https://github.com/Jamerrone/web-design',
     thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
-    principles: [{
-      name: 'clarity-is-job-1',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'one-primary-action-per-screen',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'strong-visual-hierarchies-work-best',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }]
+    principleID: 'clarity-is-job-1',
+    principleName: 'Clarity is job #1',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
   }, {
-    name: 'Jajan20',
+    username: 'Jamerrone',
+    repoUrl: 'https://github.com/Jamerrone/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'one-primary-action-per-screen',
+    principleName: 'One primary action per screen',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Jamerrone',
+    repoUrl: 'https://github.com/Jamerrone/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'strong-visual-hierarchies-work-best',
+    principleName: 'Strong visual hierarchies work best',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Jajan20',
     repoUrl: 'https://github.com/jajan20/web-design',
     thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
-    principles: [{
-      name: 'clarity-is-job-1',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'one-primary-action-per-screen',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'strong-visual-hierarchies-work-best',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }]
+    principleID: 'clarity-is-job-1',
+    principleName: 'Clarity is job #1',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
   }, {
-    name: 'RobinFrugte97',
+    username: 'Jajan20',
+    repoUrl: 'https://github.com/jajan20/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'one-primary-action-per-screen',
+    principleName: 'One primary action per screen',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Jajan20',
+    repoUrl: 'https://github.com/jajan20/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'strong-visual-hierarchies-work-best',
+    principleName: 'Strong visual hierarchies work best',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'RobinFrugte97',
     repoUrl: 'https://github.com/RobinFrugte97/web-design/',
     thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
-    principles: [{
-      name: 'one-primary-action-per-screen',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'appearance-follows-behavior',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'strong-visual-hierarchies-work-best',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }]
+    principleID: 'one-primary-action-per-screen',
+    principleName: 'One primary action per screen',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
   }, {
-    name: 'Meesrutten',
+    username: 'RobinFrugte97',
+    repoUrl: 'https://github.com/RobinFrugte97/web-design/',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'appearance-follows-behavior',
+    principleName: 'Appearance follows behavior',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'RobinFrugte97',
+    repoUrl: 'https://github.com/RobinFrugte97/web-design/',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'strong-visual-hierarchies-work-best',
+    principleName: 'Strong visual hierarchies work best',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Meesrutten',
     repoUrl: 'https://github.com/meesrutten/web-design/',
     thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
-    principles: [{
-      name: 'interfaces-exist-to-enable-interaction',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'one-primary-action-per-screen',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'progressive-disclosure',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }]
+    principleID: 'interfaces-exist-to-enable-interaction',
+    principleName: 'Interfaces exist to enable interaction',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
   }, {
-    name: 'Chanakarn',
+    username: 'Meesrutten',
+    repoUrl: 'https://github.com/meesrutten/web-design/',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'one-primary-action-per-screen',
+    principleName: 'One primary action per screen',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Meesrutten',
+    repoUrl: 'https://github.com/meesrutten/web-design/',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'progressive-disclosure',
+    principleName: 'Progressive disclosure',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Chanakarn',
     repoUrl: 'https://github.com/niyorn/web-design',
     thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
-    principles: [{
-      name: 'clarity-is-job-1',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'strong-visual-hierarchies-work-best',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'smart-organization-reduces-cognitive-load',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }]
+    principleID: 'clarity-is-job-1',
+    principleName: 'Clarity is job #1',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
   }, {
-    name: 'Sam Guliker',
+    username: 'Chanakarn',
+    repoUrl: 'https://github.com/niyorn/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'strong-visual-hierarchies-work-best',
+    principleName: 'Strong visual hierarchies work best',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Chanakarn',
+    repoUrl: 'https://github.com/niyorn/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'smart-organization-reduces-cognitive-load',
+    principleName: 'Smart organization reduces cognitive load',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Sam Guliker',
     repoUrl: 'https://github.com/sam-guliker/web-design',
     thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
-    principles: [{
-      name: 'clarity-is-job-1',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'one-primary-action-per-screen',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'consistency-matters',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }]
+    principleID: 'clarity-is-job-1',
+    principleName: 'Clarity is job #1',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
   }, {
-    name: 'Vriesm060',
+    username: 'Sam Guliker',
+    repoUrl: 'https://github.com/sam-guliker/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'one-primary-action-per-screen',
+    principleName: 'One primary action per screen',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Sam Guliker',
+    repoUrl: 'https://github.com/sam-guliker/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'consistency-matters',
+    principleName: 'Consistency matters',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Vriesm060',
     repoUrl: 'https://github.com/vriesm060/web-design',
     thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
-    principles: [{
-      name: 'clarity-is-job-1',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'strong-visual-hierarchies-work-best',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'smart-organization-reduces-cognitive-load',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }]
+    principleID: 'clarity-is-job-1',
+    principleName: 'Clarity is job #1',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
   }, {
-    name: 'NielsFS',
+    username: 'Vriesm060',
+    repoUrl: 'https://github.com/vriesm060/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'strong-visual-hierarchies-work-best',
+    principleName: 'Strong visual hierarchies work best',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Vriesm060',
+    repoUrl: 'https://github.com/vriesm060/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'smart-organization-reduces-cognitive-load',
+    principleName: 'Smart organization reduces cognitive load',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'NielsFS',
     repoUrl: 'https://github.com/NielsFS/web-design',
     thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
-    principles: [{
-      name: 'clarity-is-job-1',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'consistency-matters',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'smart-organization-reduces-cognitive-load',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }]
+    principleID: 'clarity-is-job-1',
+    principleName: 'Clarity is job #1',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
   }, {
-    name: 'Dipsaus9',
+    username: 'NielsFS',
+    repoUrl: 'https://github.com/NielsFS/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'consistency-matters',
+    principleName: 'Consistency matters',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'NielsFS',
+    repoUrl: 'https://github.com/NielsFS/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'smart-organization-reduces-cognitive-load',
+    principleName: 'Smart organization reduces cognitive load',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Dipsaus9',
     repoUrl: 'https://github.com/dipsaus9/web-design',
     thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
-    principles: [{
-      name: 'clarity-is-job-1',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'consistency-matters',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'provide-a-natural-next-step',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }]
+    principleID: 'clarity-is-job-1',
+    principleName: 'Clarity is job #1',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
   }, {
-    name: 'Yoeripasmans',
+    username: 'Dipsaus9',
+    repoUrl: 'https://github.com/dipsaus9/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'consistency-matters',
+    principleName: 'Consistency matters',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Dipsaus9',
+    repoUrl: 'https://github.com/dipsaus9/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'provide-a-natural-next-step',
+    principleName: 'Provide a natural next step',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Yoeripasmans',
     repoUrl: 'https://github.com/yoeripasmans/web-design',
     thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
-    principles: [{
-      name: 'clarity-is-job-1',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'strong-visual-hierarchies-work-best',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'progressive-disclosure',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }]
+    principleID: 'clarity-is-job-1',
+    principleName: 'Clarity is job #1',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
   }, {
-    name: 'Leoniesmits',
+    username: 'Yoeripasmans',
+    repoUrl: 'https://github.com/yoeripasmans/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'strong-visual-hierarchies-work-best',
+    principleName: 'Strong visual hierarchies work best',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Yoeripasmans',
+    repoUrl: 'https://github.com/yoeripasmans/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'progressive-disclosure',
+    principleName: 'Progressive disclosure',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Leoniesmits',
     repoUrl: 'https://github.com/leoniesmits/web-design/',
     thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
-    principles: [{
-      name: 'keep-users-in-control',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'strong-visual-hierarchies-work-best',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'progressive-disclosure',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }]
+    principleID: 'keep-users-in-control',
+    principleName: 'Keep users in control',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
   }, {
-    name: 'Japgroevemaker',
+    username: 'Leoniesmits',
+    repoUrl: 'https://github.com/leoniesmits/web-design/',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'strong-visual-hierarchies-work-best',
+    principleName: 'Strong visual hierarchies work best',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Leoniesmits',
+    repoUrl: 'https://github.com/leoniesmits/web-design/',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'progressive-disclosure',
+    principleName: 'Progressive disclosure',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Japgroevemaker',
     repoUrl: 'https://github.com/japgroevemaker/web-design',
     thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
-    principles: [{
-      name: 'one-primary-action-per-screen',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'provide-a-natural-next-step',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }, {
-      name: 'appearance-follows-behavior',
-      description: '',
-      likes: Math.floor(Math.random() * 100) + 1,
-      dislikes: Math.floor(Math.random() * 100) + 1
-    }]
+    principleID: 'one-primary-action-per-screen',
+    principleName: 'One primary action per screen',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Japgroevemaker',
+    repoUrl: 'https://github.com/japgroevemaker/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'provide-a-natural-next-step',
+    principleName: 'Provide a natural next step',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
+  }, {
+    username: 'Japgroevemaker',
+    repoUrl: 'https://github.com/japgroevemaker/web-design',
+    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    principleID: 'appearance-follows-behavior',
+    principleName: 'Appearance follows behavior',
+    principleDescription: '',
+    likes: Math.floor(Math.random() * 100) + 1,
+    dislikes: Math.floor(Math.random() * 100) + 1
   }];
 
   var _hh = hh(hyperscript),
@@ -750,14 +834,24 @@
       article = _hh.article,
       button = _hh.button,
       h2 = _hh.h2,
+      h3 = _hh.h3,
       img = _hh.img,
       li = _hh.li,
       ol = _hh.ol,
+      ul = _hh.ul,
       p = _hh.p,
-      span = _hh.span;
+      span = _hh.span,
+      strong = _hh.strong;
 
   var articles = [];
   var navItems = [];
+
+  var previusScrollPosition = -1;
+  var currentScrollPosition = 0;
+
+  var sortExamplesByNew = function sortExamplesByNew(data) {
+    generateExamples(data.reverse());
+  };
 
   var stringToID = function stringToID(s) {
     return s.replace(/\s+/g, '-').replace(/[`~!@#$%^&*()|+\=?;:'",.<>\{\}\[\]\\\/]/gi, '').toLowerCase();
@@ -765,10 +859,12 @@
 
   var generatePrinciplesList = function generatePrinciplesList(data) {
     var counter = 1;
+
     return data.forEach(function (principle) {
       var elem = article({
         id: stringToID(principle.name)
       }, [h2([span('' + counter), '' + principle.name]), p(principle.body), ol('.examples-list')]);
+
       document.querySelector('main').appendChild(elem);
       articles.push(elem);
       counter++;
@@ -777,10 +873,20 @@
 
   var generateMainNavigation = function generateMainNavigation(data) {
     var counter = 1;
+
     return data.forEach(function (principle) {
       var elem = li(a({
         href: '#' + stringToID(principle.name)
       }, counter + ' ' + principle.name));
+
+      elem.querySelector('a').addEventListener('focus', function (link) {
+        link.target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+          inline: 'center'
+        });
+      });
+
       document.querySelector('#mainNavigation').appendChild(elem);
       navItems.push(elem.querySelector('a'));
       counter++;
@@ -789,16 +895,47 @@
 
   var generateExamples = function generateExamples(data) {
     data.forEach(function (example) {
-      example.principles.forEach(function (principle) {
-        var test = li([a({ href: example.repoUrl }, img({ src: example.thumbnail })), button('Likes: ' + principle.likes), button('Dislikes: ' + principle.dislikes)]);
-        document.getElementById(principle.name).querySelector('.examples-list').appendChild(test);
+      var elem = li([a({ href: '#detailsPage' }, img({ src: example.thumbnail })), button('❤️ Like'), span('\uD83C\uDFC6 ' + (example.likes - example.dislikes)), button('💔 Dislike')]);
+
+      elem.querySelector('a').addEventListener('focus', function (link) {
+        link.target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+          inline: 'center'
+        });
       });
+
+      elem.querySelector('a').addEventListener('click', function (link) {
+        generateDetailsPage(example.username, example.principleID, examplesData);
+      });
+
+      document.getElementById(example.principleID).querySelector('.examples-list').appendChild(elem);
     });
   };
 
-  generateMainNavigation(principlesData);
-  generatePrinciplesList(principlesData);
-  generateExamples(examplesData);
+  var generateDetailsPage = function generateDetailsPage(user, parrentID, data) {
+    var detailsPage = document.getElementById('detailsPage');
+
+    var principles = data.reduce(function (accumulator, current) {
+      if (current.username === user) {
+        accumulator.push(current);
+      }
+      return accumulator;
+    }, []);
+
+    var mainContent = article([h2(user), p({ id: 'repoURL' }, [strong('RepoUrl:'), a({ href: principles[0].repoUrl, target: '_blanc' }, principles[0].repoUrl)]), ul({ id: 'principles' })]);
+
+    detailsPage.innerHTML = '';
+    detailsPage.appendChild(img({ src: principles[0].thumbnail }));
+    detailsPage.appendChild(mainContent);
+    detailsPage.appendChild(a({ href: '#' + parrentID, id: 'close' }, 'Close'));
+
+    principles.forEach(function (principle) {
+      var elem = li([h3(principle.principleName), p(principle.principleDescription || 'No description 😢')]);
+
+      document.getElementById('principles').appendChild(elem);
+    });
+  };
 
   var calcVisibilityForElem = function calcVisibilityForElem(elem) {
     var windowHeight = window.innerHeight;
@@ -835,16 +972,12 @@
         var item = _step.value;
 
         var top = calcVisibilityForElem(item);
-        if (top !== 0) {
-          if (!item.span) {
-            item.span = item.querySelector('span');
-          }
-          item.span.style.transform = 'translateY(' + Math.floor(top * 2) + 'px)';
-        }
+
         if (top >= 65) {
           if (!item.navItem) {
             item.navItem = document.querySelector('[href="#' + item.id + '"]');
           }
+
           var _iteratorNormalCompletion2 = true;
           var _didIteratorError2 = false;
           var _iteratorError2 = undefined;
@@ -871,7 +1004,11 @@
           }
 
           item.navItem.classList.add('highlight');
-          item.navItem.focus();
+          item.navItem.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+            inline: 'center'
+          });
         }
       }
     } catch (err) {
@@ -891,10 +1028,21 @@
   };
 
   var animationLoop = function animationLoop() {
-    animatePrincipleNrForAllArticles();
+    if (previusScrollPosition !== currentScrollPosition) {
+      previusScrollPosition = currentScrollPosition;
+      animatePrincipleNrForAllArticles();
+    }
+
     requestAnimationFrame(animationLoop);
   };
 
+  document.onscroll = function () {
+    currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  };
+
+  generateMainNavigation(principlesData);
+  generatePrinciplesList(principlesData);
   requestAnimationFrame(animationLoop);
+  sortExamplesByNew(examplesData);
 
 }());
