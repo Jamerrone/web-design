@@ -105,6 +105,7 @@ const generateMainNavigation = (data) => {
   let counter = 1;
 
   navItems.push(document.querySelector('[href="#introduction"]'));
+  document.querySelector('[href="#introduction"]').focus();
 
   return data.forEach((principle) => {
     const elem = li(
@@ -112,7 +113,7 @@ const generateMainNavigation = (data) => {
         {
           href: `#${stringToID(principle.name)}`,
         },
-        `${counter} ${principle.name}`
+        [strong(counter), principle.name]
       )
     );
 

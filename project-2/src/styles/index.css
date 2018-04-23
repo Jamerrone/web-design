@@ -65,6 +65,10 @@ nav {
   li {
     border-top: 1px solid #eceff1;
 
+    strong {
+      margin-right: 0.25rem;
+    }
+
     &:first-of-type {
       border-top: none;
     }

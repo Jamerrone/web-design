@@ -902,11 +902,12 @@
     var counter = 1;
 
     navItems.push(document.querySelector('[href="#introduction"]'));
+    document.querySelector('[href="#introduction"]').focus();
 
     return data.forEach(function (principle) {
       var elem = li(a({
         href: '#' + stringToID(principle.name)
-      }, counter + ' ' + principle.name));
+      }, [strong(counter), principle.name]));
 
       elem.querySelector('a').addEventListener('focus', function (link) {
         link.target.scrollIntoView({
