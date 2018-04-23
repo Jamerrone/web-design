@@ -5,12 +5,12 @@ Live deployed demo can be found [here]().
 <!-- TOC -->
 
 * [Web Design: 19 Design Principles](#web-design-19-design-principles)
-  * [Project Description](#project-description)
-    * [User 1: First & Second year CMD students](#user-1-first--second-year-cmd-students)
-    * [User 2: Marijn (Motor Disabled)](#user-2-marijn-motor-disabled)
   * [Getting Started](#getting-started)
     * [Installing](#installing)
     * [Usage](#usage)
+  * [Project Description](#project-description)
+    * [User 1: First & Second year CMD students](#user-1-first--second-year-cmd-students)
+    * [User 2: Marijn (Motor Disabled)](#user-2-marijn-motor-disabled)
   * [User Scenarios](#user-scenarios)
   * [Image Gallery](#image-gallery)
     * [Welcome Page](#welcome-page)
@@ -20,18 +20,6 @@ Live deployed demo can be found [here]().
   * [TODOS & Roadmap](#todos--roadmap)
 
 <!-- /TOC -->
-
-## Project Description
-
-While designing for the web, we always try to build cool stuff for an as large as possible audience, we try to include everyone. While this is a good thing, doing so also means that we rely on overused, boring and noncreative design patterns. For this project we had to design, prototype and test a website for two very specific people, and no I am not talking about a generalized persona, I am talking about real people. Doing so we hope to bring our creativity to the next level.
-
-### User 1: First & Second year CMD students
-
-Ok, my first user is not a single guy or girl. My first users are every first and second year CMD students that are currently learning about the 19 design principles. With this project, students can get a better idea of each principle thanks to a large number of examples built by fourth-year students. They can sort through them and even "like" the better examples.
-
-### User 2: Marijn (Motor Disabled)
-
-Marijn is a genius programmer, however, because of his motor disability he is extremely slow at typing and can't really handle a mouse like most of us. Whenever possible he should like to navigate through websites using his keyboard only, sadly this is almost never an option because we designers have no idea about what we are actually doing. For Marijn, I will build a pleasing, keyboard only navigation experience. (Other users can of course still use there mouse.)
 
 ## Getting Started
 
@@ -59,6 +47,18 @@ In order to build the project for production porpuses:
 ```
 $ npm build
 ```
+
+## Project Description
+
+While designing for the web, we always try to build cool stuff for an as large as possible audience, we try to include everyone. While this is a good thing, doing so also means that we rely on overused, boring and noncreative design patterns. For this project we had to design, prototype and test a website for two very specific people, and no I am not talking about a generalized persona, I am talking about real people. Doing so we hope to bring our creativity to the next level.
+
+### User 1: First & Second year CMD students
+
+Ok, my first user is not a single guy or girl. My first users are every first and second year CMD students that are currently learning about the 19 design principles. With this project, students can get a better idea of each principle thanks to a large number of examples built by fourth-year students. They can sort through them and even "like" the better examples.
+
+### User 2: Marijn (Motor Disabled)
+
+Marijn is a genius programmer, however, because of his motor disability he is extremely slow at typing and can't really handle a mouse like most of us. Whenever possible he should like to navigate through websites using his keyboard only, sadly this is almost never an option because we designers have no idea about what we are actually doing. For Marijn, I will build a pleasing, keyboard only navigation experience. (Other users can of course still use there mouse.)
 
 ## User Scenarios
 
