@@ -1,6 +1,6 @@
 # Web Design: 19 Design Principles
 
-Live deployed demo can be found [here]().
+Live deployed demo can be found [here](https://dist-dxjcojrvwp.now.sh/).
 
 <!-- TOC -->
 
