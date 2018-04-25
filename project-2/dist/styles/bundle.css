@@ -125,6 +125,38 @@ article h2 span {
       z-index: -1;
     }
 
+article .sortBy {
+    display: none;
+    justify-content: space-evenly;
+    margin-top: 64px;
+    margin-top: 4rem
+  }
+
+article .sortBy.show {
+  display: flex;
+}
+
+article button {
+    background-color: transparent;
+    border: 2px solid #2f2f2f;
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out
+  }
+
+article button:hover,
+    article button:focus {
+  background-color: #2f2f2f;
+  color: #fff;
+}
+
+article button::-moz-focus-inner {
+  border: 0;
+}
+
 article p {
     font-size: 20px;
     font-size: 1.25rem;
@@ -363,31 +395,3 @@ article > a:focus::before {
     margin: 0 0 48px;
     margin: 0 0 3rem;
   }
-
-#introduction div {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 48px;
-    margin-top: 3rem;
-  }
-
-#introduction button {
-    background-color: transparent;
-    border: 2px solid #2f2f2f;
-    cursor: pointer;
-    letter-spacing: 1px;
-    padding: 8px 16px;
-    padding: 0.5rem 1rem;
-    text-transform: uppercase;
-    transition: all 0.2s ease-in-out
-  }
-
-#introduction button:hover,
-    #introduction button:focus {
-  background-color: #2f2f2f;
-  color: #fff;
-}
-
-#introduction button::-moz-focus-inner {
-  border: 0;
-}

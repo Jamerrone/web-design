@@ -77,13 +77,6 @@ const generatePrinciplesList = (data) => {
         },
         'Back to navigation'
       ),
-      div([
-        button({id: 'sortByNew'}, 'Sort by New'),
-        button({id: 'sortByOld'}, 'Sort by Old'),
-        button({id: 'sortByLikes'}, 'Sort by Likes'),
-        button({id: 'sortByDislikes'}, 'Sort by Dislikes'),
-        button({id: 'sortByScore'}, 'Sort by Score'),
-      ]),
     ])
   );
 
@@ -105,6 +98,13 @@ const generatePrinciplesList = (data) => {
           },
           'Back to navigation'
         ),
+        div({className: 'sortBy'}, [
+          button({className: 'sortByNew'}, 'Sort by New'),
+          button({className: 'sortByOld'}, 'Sort by Old'),
+          button({className: 'sortByLikes'}, 'Sort by Likes'),
+          button({className: 'sortByDislikes'}, 'Sort by Dislikes'),
+          button({className: 'sortByScore'}, 'Sort by Score'),
+        ]),
         ol('.examples-list'),
       ]
     );
@@ -157,6 +157,11 @@ const generateExamples = (data) => {
       .getElementById(example.principleID)
       .querySelector('.examples-list')
       .appendChild(elem);
+
+    document
+      .getElementById(example.principleID)
+      .querySelector('.sortBy')
+      .classList.add('show');
   });
 };
 
@@ -267,29 +272,34 @@ generatePrinciplesList(principlesData);
 requestAnimationFrame(animationLoop);
 sortExamplesByScore(examplesData);
 
-document.getElementById('sortByNew').addEventListener('click', () => {
-  window.location.hash = '#clarity-is-job-1';
-  sortExamplesByNew(examplesData);
+document.querySelectorAll('.sortByNew').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    sortExamplesByNew(examplesData);
+  });
 });
 
-document.getElementById('sortByOld').addEventListener('click', () => {
-  window.location.hash = '#clarity-is-job-1';
-  sortExamplesByOld(examplesData);
+document.querySelectorAll('.sortByOld').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    sortExamplesByOld(examplesData);
+  });
 });
 
-document.getElementById('sortByLikes').addEventListener('click', () => {
-  window.location.hash = '#clarity-is-job-1';
-  sortExamplesByLikes(examplesData);
+document.querySelectorAll('.sortByLikes').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    sortExamplesByLikes(examplesData);
+  });
 });
 
-document.getElementById('sortByDislikes').addEventListener('click', () => {
-  window.location.hash = '#clarity-is-job-1';
-  sortExamplesByDislikes(examplesData);
+document.querySelectorAll('.sortByDislikes').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    sortExamplesByDislikes(examplesData);
+  });
 });
 
-document.getElementById('sortByScore').addEventListener('click', () => {
-  window.location.hash = '#clarity-is-job-1';
-  sortExamplesByScore(examplesData);
+document.querySelectorAll('.sortByScore').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    sortExamplesByScore(examplesData);
+  });
 });
 
 document.querySelectorAll('a').forEach((link) => {

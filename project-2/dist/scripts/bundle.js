@@ -887,7 +887,7 @@
       'className': 'backToNavigation',
       'data-id': '#introduction',
       'href': '#'
-    }, 'Back to navigation'), div([button({ id: 'sortByNew' }, 'Sort by New'), button({ id: 'sortByOld' }, 'Sort by Old'), button({ id: 'sortByLikes' }, 'Sort by Likes'), button({ id: 'sortByDislikes' }, 'Sort by Dislikes'), button({ id: 'sortByScore' }, 'Sort by Score')])]));
+    }, 'Back to navigation')]));
 
     articles.push(document.getElementById('introduction'));
 
@@ -898,7 +898,7 @@
         'className': 'backToNavigation',
         'data-id': '#' + stringToID(principle.name),
         'href': '#'
-      }, 'Back to navigation'), ol('.examples-list')]);
+      }, 'Back to navigation'), div({ className: 'sortBy' }, [button({ className: 'sortByNew' }, 'Sort by New'), button({ className: 'sortByOld' }, 'Sort by Old'), button({ className: 'sortByLikes' }, 'Sort by Likes'), button({ className: 'sortByDislikes' }, 'Sort by Dislikes'), button({ className: 'sortByScore' }, 'Sort by Score')]), ol('.examples-list')]);
 
       document.querySelector('main').appendChild(elem);
       articles.push(elem);
@@ -935,6 +935,8 @@
       });
 
       document.getElementById(example.principleID).querySelector('.examples-list').appendChild(elem);
+
+      document.getElementById(example.principleID).querySelector('.sortBy').classList.add('show');
     });
   };
 
@@ -1070,29 +1072,34 @@
   requestAnimationFrame(animationLoop);
   sortExamplesByScore(examplesData);
 
-  document.getElementById('sortByNew').addEventListener('click', function () {
-    window.location.hash = '#clarity-is-job-1';
-    sortExamplesByNew(examplesData);
+  document.querySelectorAll('.sortByNew').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      sortExamplesByNew(examplesData);
+    });
   });
 
-  document.getElementById('sortByOld').addEventListener('click', function () {
-    window.location.hash = '#clarity-is-job-1';
-    sortExamplesByOld(examplesData);
+  document.querySelectorAll('.sortByOld').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      sortExamplesByOld(examplesData);
+    });
   });
 
-  document.getElementById('sortByLikes').addEventListener('click', function () {
-    window.location.hash = '#clarity-is-job-1';
-    sortExamplesByLikes(examplesData);
+  document.querySelectorAll('.sortByLikes').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      sortExamplesByLikes(examplesData);
+    });
   });
 
-  document.getElementById('sortByDislikes').addEventListener('click', function () {
-    window.location.hash = '#clarity-is-job-1';
-    sortExamplesByDislikes(examplesData);
+  document.querySelectorAll('.sortByDislikes').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      sortExamplesByDislikes(examplesData);
+    });
   });
 
-  document.getElementById('sortByScore').addEventListener('click', function () {
-    window.location.hash = '#clarity-is-job-1';
-    sortExamplesByScore(examplesData);
+  document.querySelectorAll('.sortByScore').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      sortExamplesByScore(examplesData);
+    });
   });
 
   document.querySelectorAll('a').forEach(function (link) {
