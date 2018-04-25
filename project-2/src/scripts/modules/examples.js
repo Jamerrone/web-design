@@ -2,7 +2,7 @@ export default [
   {
     username: 'Jamerrone',
     repoUrl: 'https://github.com/Jamerrone/web-design',
-    thumbnail: '../assets/images/james.png',
+    thumbnail: './assets/images/james.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
     principleDescription:
@@ -13,7 +13,7 @@ export default [
   {
     username: 'Jamerrone',
     repoUrl: 'https://github.com/Jamerrone/web-design',
-    thumbnail: '../assets/images/james.png',
+    thumbnail: './assets/images/james.png',
     principleID: 'one-primary-action-per-screen',
     principleName: 'One primary action per screen',
     principleDescription:
@@ -24,7 +24,7 @@ export default [
   {
     username: 'Jamerrone',
     repoUrl: 'https://github.com/Jamerrone/web-design',
-    thumbnail: '../assets/images/james.png',
+    thumbnail: './assets/images/james.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
     principleDescription:
@@ -35,7 +35,7 @@ export default [
   {
     username: 'Jajan20',
     repoUrl: 'https://github.com/jajan20/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
     principleDescription:
@@ -46,7 +46,7 @@ export default [
   {
     username: 'Jajan20',
     repoUrl: 'https://github.com/jajan20/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'one-primary-action-per-screen',
     principleName: 'One primary action per screen',
     principleDescription:
@@ -57,7 +57,7 @@ export default [
   {
     username: 'Jajan20',
     repoUrl: 'https://github.com/jajan20/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
     principleDescription:
@@ -68,7 +68,7 @@ export default [
   {
     username: 'RobinFrugte97',
     repoUrl: 'https://github.com/RobinFrugte97/web-design/',
-    thumbnail: '../assets/images/robin.png',
+    thumbnail: './assets/images/robin.png',
     principleID: 'one-primary-action-per-screen',
     principleName: 'One primary action per screen',
     principleDescription:
@@ -79,7 +79,7 @@ export default [
   {
     username: 'RobinFrugte97',
     repoUrl: 'https://github.com/RobinFrugte97/web-design/',
-    thumbnail: '../assets/images/robin.png',
+    thumbnail: './assets/images/robin.png',
     principleID: 'appearance-follows-behavior',
     principleName: 'Appearance follows behavior',
     principleDescription:
@@ -90,7 +90,7 @@ export default [
   {
     username: 'RobinFrugte97',
     repoUrl: 'https://github.com/RobinFrugte97/web-design/',
-    thumbnail: '../assets/images/robin.png',
+    thumbnail: './assets/images/robin.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
     principleDescription:
@@ -101,7 +101,7 @@ export default [
   {
     username: 'Meesrutten',
     repoUrl: 'https://github.com/meesrutten/web-design/',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'interfaces-exist-to-enable-interaction',
     principleName: 'Interfaces exist to enable interaction',
     principleDescription:
@@ -112,7 +112,7 @@ export default [
   {
     username: 'Meesrutten',
     repoUrl: 'https://github.com/meesrutten/web-design/',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'one-primary-action-per-screen',
     principleName: 'One primary action per screen',
     principleDescription:
@@ -123,7 +123,7 @@ export default [
   {
     username: 'Meesrutten',
     repoUrl: 'https://github.com/meesrutten/web-design/',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'progressive-disclosure',
     principleName: 'Progressive disclosure',
     principleDescription:
@@ -134,7 +134,7 @@ export default [
   {
     username: 'Chanakarn',
     repoUrl: 'https://github.com/niyorn/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
     principleDescription: '',
@@ -144,7 +144,7 @@ export default [
   {
     username: 'Chanakarn',
     repoUrl: 'https://github.com/niyorn/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
     principleDescription: '',
@@ -154,7 +154,7 @@ export default [
   {
     username: 'Chanakarn',
     repoUrl: 'https://github.com/niyorn/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'smart-organization-reduces-cognitive-load',
     principleName: 'Smart organization reduces cognitive load',
     principleDescription: '',
@@ -164,7 +164,7 @@ export default [
   {
     username: 'Sam Guliker',
     repoUrl: 'https://github.com/sam-guliker/web-design',
-    thumbnail: '../assets/images/sam.png',
+    thumbnail: './assets/images/sam.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
     principleDescription:
@@ -175,7 +175,7 @@ export default [
   {
     username: 'Sam Guliker',
     repoUrl: 'https://github.com/sam-guliker/web-design',
-    thumbnail: '../assets/images/sam.png',
+    thumbnail: './assets/images/sam.png',
     principleID: 'one-primary-action-per-screen',
     principleName: 'One primary action per screen',
     principleDescription:
@@ -186,7 +186,7 @@ export default [
   {
     username: 'Sam Guliker',
     repoUrl: 'https://github.com/sam-guliker/web-design',
-    thumbnail: '../assets/images/sam.png',
+    thumbnail: './assets/images/sam.png',
     principleID: 'consistency-matters',
     principleName: 'Consistency matters',
     principleDescription:
@@ -197,7 +197,7 @@ export default [
   {
     username: 'Vriesm060',
     repoUrl: 'https://github.com/vriesm060/web-design',
-    thumbnail: '../assets/images/vriesm060.png',
+    thumbnail: './assets/images/vriesm060.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
     principleDescription: '',
@@ -207,7 +207,7 @@ export default [
   {
     username: 'Vriesm060',
     repoUrl: 'https://github.com/vriesm060/web-design',
-    thumbnail: '../assets/images/vriesm060.png',
+    thumbnail: './assets/images/vriesm060.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
     principleDescription: '',
@@ -217,7 +217,7 @@ export default [
   {
     username: 'Vriesm060',
     repoUrl: 'https://github.com/vriesm060/web-design',
-    thumbnail: '../assets/images/vriesm060.png',
+    thumbnail: './assets/images/vriesm060.png',
     principleID: 'smart-organization-reduces-cognitive-load',
     principleName: 'Smart organization reduces cognitive load',
     principleDescription: '',
@@ -227,7 +227,7 @@ export default [
   {
     username: 'NielsFS',
     repoUrl: 'https://github.com/NielsFS/web-design',
-    thumbnail: '../assets/images/niels.png',
+    thumbnail: './assets/images/niels.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
     principleDescription:
@@ -238,7 +238,7 @@ export default [
   {
     username: 'NielsFS',
     repoUrl: 'https://github.com/NielsFS/web-design',
-    thumbnail: '../assets/images/niels.png',
+    thumbnail: './assets/images/niels.png',
     principleID: 'consistency-matters',
     principleName: 'Consistency matters',
     principleDescription:
@@ -249,7 +249,7 @@ export default [
   {
     username: 'NielsFS',
     repoUrl: 'https://github.com/NielsFS/web-design',
-    thumbnail: '../assets/images/niels.png',
+    thumbnail: './assets/images/niels.png',
     principleID: 'smart-organization-reduces-cognitive-load',
     principleName: 'Smart organization reduces cognitive load',
     principleDescription:
@@ -260,7 +260,7 @@ export default [
   {
     username: 'Dipsaus9',
     repoUrl: 'https://github.com/dipsaus9/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
     principleDescription:
@@ -271,7 +271,7 @@ export default [
   {
     username: 'Dipsaus9',
     repoUrl: 'https://github.com/dipsaus9/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'consistency-matters',
     principleName: 'Consistency matters',
     principleDescription:
@@ -282,7 +282,7 @@ export default [
   {
     username: 'Dipsaus9',
     repoUrl: 'https://github.com/dipsaus9/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'provide-a-natural-next-step',
     principleName: 'Provide a natural next step',
     principleDescription: '',
@@ -292,7 +292,7 @@ export default [
   {
     username: 'Yoeripasmans',
     repoUrl: 'https://github.com/yoeripasmans/web-design',
-    thumbnail: '../assets/images/yori.png',
+    thumbnail: './assets/images/yori.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
     principleDescription:
@@ -303,7 +303,7 @@ export default [
   {
     username: 'Yoeripasmans',
     repoUrl: 'https://github.com/yoeripasmans/web-design',
-    thumbnail: '../assets/images/yori.png',
+    thumbnail: './assets/images/yori.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
     principleDescription:
@@ -314,7 +314,7 @@ export default [
   {
     username: 'Yoeripasmans',
     repoUrl: 'https://github.com/yoeripasmans/web-design',
-    thumbnail: '../assets/images/yori.png',
+    thumbnail: './assets/images/yori.png',
     principleID: 'progressive-disclosure',
     principleName: 'Progressive disclosure',
     principleDescription:
@@ -325,7 +325,7 @@ export default [
   {
     username: 'Leoniesmits',
     repoUrl: 'https://github.com/leoniesmits/web-design/',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'keep-users-in-control',
     principleName: 'Keep users in control',
     principleDescription:
@@ -336,7 +336,7 @@ export default [
   {
     username: 'Leoniesmits',
     repoUrl: 'https://github.com/leoniesmits/web-design/',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
     principleDescription:
@@ -347,7 +347,7 @@ export default [
   {
     username: 'Leoniesmits',
     repoUrl: 'https://github.com/leoniesmits/web-design/',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'progressive-disclosure',
     principleName: 'Progressive disclosure',
     principleDescription:
@@ -358,7 +358,7 @@ export default [
   {
     username: 'Japgroevemaker',
     repoUrl: 'https://github.com/japgroevemaker/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'one-primary-action-per-screen',
     principleName: 'One primary action per screen',
     principleDescription:
@@ -369,7 +369,7 @@ export default [
   {
     username: 'Japgroevemaker',
     repoUrl: 'https://github.com/japgroevemaker/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'provide-a-natural-next-step',
     principleName: 'Provide a natural next step',
     principleDescription:
@@ -380,7 +380,7 @@ export default [
   {
     username: 'Japgroevemaker',
     repoUrl: 'https://github.com/japgroevemaker/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'appearance-follows-behavior',
     principleName: 'Appearance follows behavior',
     principleDescription:

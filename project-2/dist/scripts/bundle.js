@@ -506,7 +506,7 @@
   var examplesData = [{
     username: 'Jamerrone',
     repoUrl: 'https://github.com/Jamerrone/web-design',
-    thumbnail: '../assets/images/james.png',
+    thumbnail: './assets/images/james.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
     principleDescription: 'Normally I try to build clarity using icons, buttons or labels. However, this time I tried to explain my unusual interface using animations.',
@@ -515,7 +515,7 @@
   }, {
     username: 'Jamerrone',
     repoUrl: 'https://github.com/Jamerrone/web-design',
-    thumbnail: '../assets/images/james.png',
+    thumbnail: './assets/images/james.png',
     principleID: 'one-primary-action-per-screen',
     principleName: 'One primary action per screen',
     principleDescription: 'I mainly have two screens, each having there own primary action and multiple secondary actions. For example, on the homepage/overview page, users can see and scroll trough multiples images, when clicked they expose more information about themselves in a separated detail view.',
@@ -524,7 +524,7 @@
   }, {
     username: 'Jamerrone',
     repoUrl: 'https://github.com/Jamerrone/web-design',
-    thumbnail: '../assets/images/james.png',
+    thumbnail: './assets/images/james.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
     principleDescription: 'The main content of my concept are images witch by nature atracht way more attention to themselfs then text elements do. They are big, fun and full of colors. In the end, I chose to keep my main focal points on theimages themselfs while also tring to call attention to the headers.',
@@ -533,7 +533,7 @@
   }, {
     username: 'Jajan20',
     repoUrl: 'https://github.com/jajan20/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
     principleDescription: 'By keeping my interface clean and simple users can find directly what they need. The logo is big, with a name whichs tells exactly what the interface is used for.',
@@ -542,7 +542,7 @@
   }, {
     username: 'Jajan20',
     repoUrl: 'https://github.com/jajan20/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'one-primary-action-per-screen',
     principleName: 'One primary action per screen',
     principleDescription: 'By making the decesion making buttons big and stand out with color. They will attract the attention of the user.',
@@ -551,7 +551,7 @@
   }, {
     username: 'Jajan20',
     repoUrl: 'https://github.com/jajan20/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
     principleDescription: 'Every page gives the user a choice, but just one choice. This way any significant actions are carefully taken.',
@@ -560,7 +560,7 @@
   }, {
     username: 'RobinFrugte97',
     repoUrl: 'https://github.com/RobinFrugte97/web-design/',
-    thumbnail: '../assets/images/robin.png',
+    thumbnail: './assets/images/robin.png',
     principleID: 'one-primary-action-per-screen',
     principleName: 'One primary action per screen',
     principleDescription: 'I tried to seperate all features in my site as much as possible. I have a seperate state for the landing page, filtering, searching, and watching videos.',
@@ -569,7 +569,7 @@
   }, {
     username: 'RobinFrugte97',
     repoUrl: 'https://github.com/RobinFrugte97/web-design/',
-    thumbnail: '../assets/images/robin.png',
+    thumbnail: './assets/images/robin.png',
     principleID: 'appearance-follows-behavior',
     principleName: 'Appearance follows behavior',
     principleDescription: 'I made every clickable element in my website appear as such by making it stand uit of the rest and making buttons look like real buttons, for example.',
@@ -578,7 +578,7 @@
   }, {
     username: 'RobinFrugte97',
     repoUrl: 'https://github.com/RobinFrugte97/web-design/',
-    thumbnail: '../assets/images/robin.png',
+    thumbnail: './assets/images/robin.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
     principleDescription: 'I tried to play with the hierarchy of the site by making the main navigation of the site relatively big. It stands out from the rest.',
@@ -587,7 +587,7 @@
   }, {
     username: 'Meesrutten',
     repoUrl: 'https://github.com/meesrutten/web-design/',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'interfaces-exist-to-enable-interaction',
     principleName: 'Interfaces exist to enable interaction',
     principleDescription: 'On first load, the zero state, the user will see an animation of a card to give awareness of it\'s interactiveness. If the user hovers over a card he will see it moving in depth, this effect should give the user a clue that there is more content behind or within the card. When scrolling the cards will change in depth for the same effect named above.',
@@ -596,7 +596,7 @@
   }, {
     username: 'Meesrutten',
     repoUrl: 'https://github.com/meesrutten/web-design/',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'one-primary-action-per-screen',
     principleName: 'One primary action per screen',
     principleDescription: 'Every card and detailpage has only one primary button. Cards also have links to external page but all buttons are singular and primary.',
@@ -605,7 +605,7 @@
   }, {
     username: 'Meesrutten',
     repoUrl: 'https://github.com/meesrutten/web-design/',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'progressive-disclosure',
     principleName: 'Progressive disclosure',
     principleDescription: 'When interacting with the primary action, the card will flip or fold and reveal it\'s contents.',
@@ -614,7 +614,7 @@
   }, {
     username: 'Chanakarn',
     repoUrl: 'https://github.com/niyorn/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
     principleDescription: '',
@@ -623,7 +623,7 @@
   }, {
     username: 'Chanakarn',
     repoUrl: 'https://github.com/niyorn/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
     principleDescription: '',
@@ -632,7 +632,7 @@
   }, {
     username: 'Chanakarn',
     repoUrl: 'https://github.com/niyorn/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'smart-organization-reduces-cognitive-load',
     principleName: 'Smart organization reduces cognitive load',
     principleDescription: '',
@@ -641,7 +641,7 @@
   }, {
     username: 'Sam Guliker',
     repoUrl: 'https://github.com/sam-guliker/web-design',
-    thumbnail: '../assets/images/sam.png',
+    thumbnail: './assets/images/sam.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
     principleDescription: 'It\'s important to let the design explain itself itself.',
@@ -650,7 +650,7 @@
   }, {
     username: 'Sam Guliker',
     repoUrl: 'https://github.com/sam-guliker/web-design',
-    thumbnail: '../assets/images/sam.png',
+    thumbnail: './assets/images/sam.png',
     principleID: 'one-primary-action-per-screen',
     principleName: 'One primary action per screen',
     principleDescription: 'Everyscreen got a primary action, this way it is simple to understand what is going on.',
@@ -659,7 +659,7 @@
   }, {
     username: 'Sam Guliker',
     repoUrl: 'https://github.com/sam-guliker/web-design',
-    thumbnail: '../assets/images/sam.png',
+    thumbnail: './assets/images/sam.png',
     principleID: 'consistency-matters',
     principleName: 'Consistency matters',
     principleDescription: 'I\'ts important to have a consistant page to help the user understand what is going on within the page.',
@@ -668,7 +668,7 @@
   }, {
     username: 'Vriesm060',
     repoUrl: 'https://github.com/vriesm060/web-design',
-    thumbnail: '../assets/images/vriesm060.png',
+    thumbnail: './assets/images/vriesm060.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
     principleDescription: '',
@@ -677,7 +677,7 @@
   }, {
     username: 'Vriesm060',
     repoUrl: 'https://github.com/vriesm060/web-design',
-    thumbnail: '../assets/images/vriesm060.png',
+    thumbnail: './assets/images/vriesm060.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
     principleDescription: '',
@@ -686,7 +686,7 @@
   }, {
     username: 'Vriesm060',
     repoUrl: 'https://github.com/vriesm060/web-design',
-    thumbnail: '../assets/images/vriesm060.png',
+    thumbnail: './assets/images/vriesm060.png',
     principleID: 'smart-organization-reduces-cognitive-load',
     principleName: 'Smart organization reduces cognitive load',
     principleDescription: '',
@@ -695,7 +695,7 @@
   }, {
     username: 'NielsFS',
     repoUrl: 'https://github.com/NielsFS/web-design',
-    thumbnail: '../assets/images/niels.png',
+    thumbnail: './assets/images/niels.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
     principleDescription: 'A clean interface that focusses the user on the content. The page is designed to not be cluttered.',
@@ -704,7 +704,7 @@
   }, {
     username: 'NielsFS',
     repoUrl: 'https://github.com/NielsFS/web-design',
-    thumbnail: '../assets/images/niels.png',
+    thumbnail: './assets/images/niels.png',
     principleID: 'consistency-matters',
     principleName: 'Consistency matters',
     principleDescription: 'Fully responsive page so that the content is always presented the same way. When opening menu\'s, the content scales and resizes.',
@@ -713,7 +713,7 @@
   }, {
     username: 'NielsFS',
     repoUrl: 'https://github.com/NielsFS/web-design',
-    thumbnail: '../assets/images/niels.png',
+    thumbnail: './assets/images/niels.png',
     principleID: 'smart-organization-reduces-cognitive-load',
     principleName: 'Smart organization reduces cognitive load',
     principleDescription: 'The menu\'s are hidden to minimize the cognitive load while looking at the screen. However, on first entering the website the category filtering menu is open to show the user that the videos can be filtered. On scroll the menu will automatically close itself.',
@@ -722,7 +722,7 @@
   }, {
     username: 'Dipsaus9',
     repoUrl: 'https://github.com/dipsaus9/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
     principleDescription: 'The purpose of the page should be clear at first view.',
@@ -731,7 +731,7 @@
   }, {
     username: 'Dipsaus9',
     repoUrl: 'https://github.com/dipsaus9/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'consistency-matters',
     principleName: 'Consistency matters',
     principleDescription: 'Each state at the website has one primary function and one action only.',
@@ -740,7 +740,7 @@
   }, {
     username: 'Dipsaus9',
     repoUrl: 'https://github.com/dipsaus9/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'provide-a-natural-next-step',
     principleName: 'Provide a natural next step',
     principleDescription: '',
@@ -749,7 +749,7 @@
   }, {
     username: 'Yoeripasmans',
     repoUrl: 'https://github.com/yoeripasmans/web-design',
-    thumbnail: '../assets/images/yori.png',
+    thumbnail: './assets/images/yori.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
     principleDescription: 'Build clarity with using a clean interface with existing patterns of a gallery. Users recongize these patterns and easier understand the interface of the gallery.',
@@ -758,7 +758,7 @@
   }, {
     username: 'Yoeripasmans',
     repoUrl: 'https://github.com/yoeripasmans/web-design',
-    thumbnail: '../assets/images/yori.png',
+    thumbnail: './assets/images/yori.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
     principleDescription: 'Using different font weights and colors with the usage of correct styling, I\'m trying to create a strong visual hierarchy.',
@@ -767,7 +767,7 @@
   }, {
     username: 'Yoeripasmans',
     repoUrl: 'https://github.com/yoeripasmans/web-design',
-    thumbnail: '../assets/images/yori.png',
+    thumbnail: './assets/images/yori.png',
     principleID: 'progressive-disclosure',
     principleName: 'Progressive disclosure',
     principleDescription: 'By not showing all of the details of the images in the gallery, but only on the when the user hover on that image, the gallery don\'t gets cluttered and stays clean. Therefore the interaction with the gallery is also more clear.',
@@ -776,7 +776,7 @@
   }, {
     username: 'Leoniesmits',
     repoUrl: 'https://github.com/leoniesmits/web-design/',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'keep-users-in-control',
     principleName: 'Keep users in control',
     principleDescription: 'Keep users in control. You don\'t want to overload them with information, but make the users feel like they are in complete control. The user can filter and sort everything, they can close and open all menus.',
@@ -785,7 +785,7 @@
   }, {
     username: 'Leoniesmits',
     repoUrl: 'https://github.com/leoniesmits/web-design/',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
     principleDescription: 'Strong visual hierarchies work best. The buttons are below the main navigation, the content draws the attention since that is the main focus. The filter options descend from overall to more detailed options. The filter menu is obviously less important than the content.',
@@ -794,7 +794,7 @@
   }, {
     username: 'Leoniesmits',
     repoUrl: 'https://github.com/leoniesmits/web-design/',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'progressive-disclosure',
     principleName: 'Progressive disclosure',
     principleDescription: 'Progressive Disclosure. The number of results is shown to the user, so that they know what content they can sort and filter. Give them enough information to make choices but don\'t overload them.',
@@ -803,7 +803,7 @@
   }, {
     username: 'Japgroevemaker',
     repoUrl: 'https://github.com/japgroevemaker/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'one-primary-action-per-screen',
     principleName: 'One primary action per screen',
     principleDescription: 'As i was making the photogallery, there is one primary action per screen. You can look at the photos and when you click them you make them bigger.',
@@ -812,7 +812,7 @@
   }, {
     username: 'Japgroevemaker',
     repoUrl: 'https://github.com/japgroevemaker/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'provide-a-natural-next-step',
     principleName: 'Provide a natural next step',
     principleDescription: 'When the user clicks on one of the buttons, the thing the user expects will happen.',
@@ -821,7 +821,7 @@
   }, {
     username: 'Japgroevemaker',
     repoUrl: 'https://github.com/japgroevemaker/web-design',
-    thumbnail: '../assets/images/noimage.png',
+    thumbnail: './assets/images/noimage.png',
     principleID: 'appearance-follows-behavior',
     principleName: 'Appearance follows behavior',
     principleDescription: 'When the user makes the photo bigger, it shows three buttons. One in the top left corner, one on the left of the photo and one on the right of the photo. These buttons don\'t really need explanation because they are patterns.',
