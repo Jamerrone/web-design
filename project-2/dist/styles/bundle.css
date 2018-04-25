@@ -90,10 +90,13 @@ nav a {
   }
 
 nav a.highlight,
-    nav a:focus,
     nav a:hover {
   background-color: #2f2f2f;
   color: #fff;
+}
+
+nav a:not(.highlight):focus {
+  box-shadow: inset 0 0 0 2px #2f2f2f;
 }
 
 article {
@@ -115,7 +118,6 @@ article h2 {
 
 article h2 span {
       color: #eceff1;
-      font-size: 128px;
       font-size: 400px;
       font-size: 25rem;
       font-weight: lighter;
@@ -129,6 +131,28 @@ article p {
     line-height: 1.5em;
   }
 
+article > a {
+    display: block;
+    height: 0;
+    opacity: 0;
+    user-select: none
+  }
+
+article > a:focus {
+  height: auto;
+  margin-top: 20px;
+  margin-top: 1.25rem;
+  opacity: 1;
+  user-select: unset;
+}
+
+article > a:focus::before {
+  animation: point 1s infinite;
+  content: "👉";
+  margin-right: 8px;
+  margin-right: 0.5rem;
+}
+
 .examples-list {
   overflow-x: scroll;
   overflow-y: hidden;
@@ -137,15 +161,17 @@ article p {
 
 .examples-list img {
     display: block;
-    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter');
-    filter: grayscale(100%);
-    height: auto;
+    filter: none;
+    height: 180px;
+    object-fit: cover;
+    object-position: center center;
     transition: filter 0.2s ease-in-out;
     width: 100%
   }
 
 .examples-list img:hover {
-  filter: none;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter');
+  filter: grayscale(100%);
 }
 
 .examples-list li {
@@ -155,7 +181,8 @@ article p {
     margin-top: 64px;
     margin-top: 4rem;
     text-align: center;
-    width: calc(33.333% - 2rem)
+    width: calc(33.333% - 2rem);
+    position: relative
   }
 
 .examples-list li:last-of-type {
@@ -163,8 +190,25 @@ article p {
 }
 
 .examples-list li:focus-within img {
-  filter: none;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter');
+  filter: grayscale(100%);
 }
+
+.examples-list a:focus::before,
+  .examples-list a:hover::before {
+    content: "+";
+    color: #fff;
+    font-size: 48px;
+    font-size: 3rem;
+    left: 0;
+    line-height: 180px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    user-select: none;
+    z-index: 5;
+    background-color: rgba(3, 155, 229, .8);
+  }
 
 .examples-list button {
     background-color: transparent;
@@ -194,20 +238,21 @@ article p {
   }
 
 #detailsPage {
-  background-color: #fff;
   display: flex;
   height: 100vh;
   margin-left: 300px;
   opacity: 0;
   position: fixed;
   transition: opacity 0.3s ease-in-out;
+  user-select: none;
   visibility: hidden;
   width: calc(100% - 300px);
-  z-index: 2
+  z-index: 10
 }
 
 #detailsPage:target {
   opacity: 1;
+  user-select: unset;
   visibility: visible;
 }
 
@@ -227,6 +272,7 @@ article p {
 }
 
 #detailsPage article {
+    background-color: #fff;
     padding: 48px;
     padding: 3rem;
 }
@@ -282,7 +328,7 @@ article p {
     right: 0;
     top: 0;
     transition: all 0.2s ease-in-out;
-    z-index: 4;
+    z-index: 11;
 }
 
 #detailsPage #close:hover,

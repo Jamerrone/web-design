@@ -506,115 +506,115 @@
   var examplesData = [{
     username: 'Jamerrone',
     repoUrl: 'https://github.com/Jamerrone/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/james.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
-    principleDescription: '',
+    principleDescription: 'Normally I try to build clarity using icons, buttons or labels. However, this time I tried to explain my unusual interface using animations.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Jamerrone',
     repoUrl: 'https://github.com/Jamerrone/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/james.png',
     principleID: 'one-primary-action-per-screen',
     principleName: 'One primary action per screen',
-    principleDescription: '',
+    principleDescription: 'I mainly have two screens, each having there own primary action and multiple secondary actions. For example, on the homepage/overview page, users can see and scroll trough multiples images, when clicked they expose more information about themselves in a separated detail view.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Jamerrone',
     repoUrl: 'https://github.com/Jamerrone/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/james.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
-    principleDescription: '',
+    principleDescription: 'The main content of my concept are images witch by nature atracht way more attention to themselfs then text elements do. They are big, fun and full of colors. In the end, I chose to keep my main focal points on theimages themselfs while also tring to call attention to the headers.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Jajan20',
     repoUrl: 'https://github.com/jajan20/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/noimage.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
-    principleDescription: '',
+    principleDescription: 'By keeping my interface clean and simple users can find directly what they need. The logo is big, with a name whichs tells exactly what the interface is used for.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Jajan20',
     repoUrl: 'https://github.com/jajan20/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/noimage.png',
     principleID: 'one-primary-action-per-screen',
     principleName: 'One primary action per screen',
-    principleDescription: '',
+    principleDescription: 'By making the decesion making buttons big and stand out with color. They will attract the attention of the user.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Jajan20',
     repoUrl: 'https://github.com/jajan20/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/noimage.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
-    principleDescription: '',
+    principleDescription: 'Every page gives the user a choice, but just one choice. This way any significant actions are carefully taken.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'RobinFrugte97',
     repoUrl: 'https://github.com/RobinFrugte97/web-design/',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/robin.png',
     principleID: 'one-primary-action-per-screen',
     principleName: 'One primary action per screen',
-    principleDescription: '',
+    principleDescription: 'I tried to seperate all features in my site as much as possible. I have a seperate state for the landing page, filtering, searching, and watching videos.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'RobinFrugte97',
     repoUrl: 'https://github.com/RobinFrugte97/web-design/',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/robin.png',
     principleID: 'appearance-follows-behavior',
     principleName: 'Appearance follows behavior',
-    principleDescription: '',
+    principleDescription: 'I made every clickable element in my website appear as such by making it stand uit of the rest and making buttons look like real buttons, for example.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'RobinFrugte97',
     repoUrl: 'https://github.com/RobinFrugte97/web-design/',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/robin.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
-    principleDescription: '',
+    principleDescription: 'I tried to play with the hierarchy of the site by making the main navigation of the site relatively big. It stands out from the rest.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Meesrutten',
     repoUrl: 'https://github.com/meesrutten/web-design/',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/noimage.png',
     principleID: 'interfaces-exist-to-enable-interaction',
     principleName: 'Interfaces exist to enable interaction',
-    principleDescription: '',
+    principleDescription: 'On first load, the zero state, the user will see an animation of a card to give awareness of it\'s interactiveness. If the user hovers over a card he will see it moving in depth, this effect should give the user a clue that there is more content behind or within the card. When scrolling the cards will change in depth for the same effect named above.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Meesrutten',
     repoUrl: 'https://github.com/meesrutten/web-design/',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/noimage.png',
     principleID: 'one-primary-action-per-screen',
     principleName: 'One primary action per screen',
-    principleDescription: '',
+    principleDescription: 'Every card and detailpage has only one primary button. Cards also have links to external page but all buttons are singular and primary.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Meesrutten',
     repoUrl: 'https://github.com/meesrutten/web-design/',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/noimage.png',
     principleID: 'progressive-disclosure',
     principleName: 'Progressive disclosure',
-    principleDescription: '',
+    principleDescription: 'When interacting with the primary action, the card will flip or fold and reveal it\'s contents.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Chanakarn',
     repoUrl: 'https://github.com/niyorn/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/noimage.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
     principleDescription: '',
@@ -623,7 +623,7 @@
   }, {
     username: 'Chanakarn',
     repoUrl: 'https://github.com/niyorn/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/noimage.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
     principleDescription: '',
@@ -632,7 +632,7 @@
   }, {
     username: 'Chanakarn',
     repoUrl: 'https://github.com/niyorn/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/noimage.png',
     principleID: 'smart-organization-reduces-cognitive-load',
     principleName: 'Smart organization reduces cognitive load',
     principleDescription: '',
@@ -641,34 +641,34 @@
   }, {
     username: 'Sam Guliker',
     repoUrl: 'https://github.com/sam-guliker/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/sam.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
-    principleDescription: '',
+    principleDescription: 'It\'s important to let the design explain itself itself.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Sam Guliker',
     repoUrl: 'https://github.com/sam-guliker/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/sam.png',
     principleID: 'one-primary-action-per-screen',
     principleName: 'One primary action per screen',
-    principleDescription: '',
+    principleDescription: 'Everyscreen got a primary action, this way it is simple to understand what is going on.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Sam Guliker',
     repoUrl: 'https://github.com/sam-guliker/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/sam.png',
     principleID: 'consistency-matters',
     principleName: 'Consistency matters',
-    principleDescription: '',
+    principleDescription: 'I\'ts important to have a consistant page to help the user understand what is going on within the page.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Vriesm060',
     repoUrl: 'https://github.com/vriesm060/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/vriesm060.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
     principleDescription: '',
@@ -677,7 +677,7 @@
   }, {
     username: 'Vriesm060',
     repoUrl: 'https://github.com/vriesm060/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/vriesm060.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
     principleDescription: '',
@@ -686,7 +686,7 @@
   }, {
     username: 'Vriesm060',
     repoUrl: 'https://github.com/vriesm060/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/vriesm060.png',
     principleID: 'smart-organization-reduces-cognitive-load',
     principleName: 'Smart organization reduces cognitive load',
     principleDescription: '',
@@ -695,52 +695,52 @@
   }, {
     username: 'NielsFS',
     repoUrl: 'https://github.com/NielsFS/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/niels.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
-    principleDescription: '',
+    principleDescription: 'A clean interface that focusses the user on the content. The page is designed to not be cluttered.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'NielsFS',
     repoUrl: 'https://github.com/NielsFS/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/niels.png',
     principleID: 'consistency-matters',
     principleName: 'Consistency matters',
-    principleDescription: '',
+    principleDescription: 'Fully responsive page so that the content is always presented the same way. When opening menu\'s, the content scales and resizes.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'NielsFS',
     repoUrl: 'https://github.com/NielsFS/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/niels.png',
     principleID: 'smart-organization-reduces-cognitive-load',
     principleName: 'Smart organization reduces cognitive load',
-    principleDescription: '',
+    principleDescription: 'The menu\'s are hidden to minimize the cognitive load while looking at the screen. However, on first entering the website the category filtering menu is open to show the user that the videos can be filtered. On scroll the menu will automatically close itself.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Dipsaus9',
     repoUrl: 'https://github.com/dipsaus9/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/noimage.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
-    principleDescription: '',
+    principleDescription: 'The purpose of the page should be clear at first view.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Dipsaus9',
     repoUrl: 'https://github.com/dipsaus9/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/noimage.png',
     principleID: 'consistency-matters',
     principleName: 'Consistency matters',
-    principleDescription: '',
+    principleDescription: 'Each state at the website has one primary function and one action only.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Dipsaus9',
     repoUrl: 'https://github.com/dipsaus9/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/noimage.png',
     principleID: 'provide-a-natural-next-step',
     principleName: 'Provide a natural next step',
     principleDescription: '',
@@ -749,82 +749,82 @@
   }, {
     username: 'Yoeripasmans',
     repoUrl: 'https://github.com/yoeripasmans/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/yori.png',
     principleID: 'clarity-is-job-1',
     principleName: 'Clarity is job #1',
-    principleDescription: '',
+    principleDescription: 'Build clarity with using a clean interface with existing patterns of a gallery. Users recongize these patterns and easier understand the interface of the gallery.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Yoeripasmans',
     repoUrl: 'https://github.com/yoeripasmans/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/yori.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
-    principleDescription: '',
+    principleDescription: 'Using different font weights and colors with the usage of correct styling, I\'m trying to create a strong visual hierarchy.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Yoeripasmans',
     repoUrl: 'https://github.com/yoeripasmans/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/yori.png',
     principleID: 'progressive-disclosure',
     principleName: 'Progressive disclosure',
-    principleDescription: '',
+    principleDescription: 'By not showing all of the details of the images in the gallery, but only on the when the user hover on that image, the gallery don\'t gets cluttered and stays clean. Therefore the interaction with the gallery is also more clear.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Leoniesmits',
     repoUrl: 'https://github.com/leoniesmits/web-design/',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/noimage.png',
     principleID: 'keep-users-in-control',
     principleName: 'Keep users in control',
-    principleDescription: '',
+    principleDescription: 'Keep users in control. You don\'t want to overload them with information, but make the users feel like they are in complete control. The user can filter and sort everything, they can close and open all menus.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Leoniesmits',
     repoUrl: 'https://github.com/leoniesmits/web-design/',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/noimage.png',
     principleID: 'strong-visual-hierarchies-work-best',
     principleName: 'Strong visual hierarchies work best',
-    principleDescription: '',
+    principleDescription: 'Strong visual hierarchies work best. The buttons are below the main navigation, the content draws the attention since that is the main focus. The filter options descend from overall to more detailed options. The filter menu is obviously less important than the content.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Leoniesmits',
     repoUrl: 'https://github.com/leoniesmits/web-design/',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/noimage.png',
     principleID: 'progressive-disclosure',
     principleName: 'Progressive disclosure',
-    principleDescription: '',
+    principleDescription: 'Progressive Disclosure. The number of results is shown to the user, so that they know what content they can sort and filter. Give them enough information to make choices but don\'t overload them.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Japgroevemaker',
     repoUrl: 'https://github.com/japgroevemaker/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/noimage.png',
     principleID: 'one-primary-action-per-screen',
     principleName: 'One primary action per screen',
-    principleDescription: '',
+    principleDescription: 'As i was making the photogallery, there is one primary action per screen. You can look at the photos and when you click them you make them bigger.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Japgroevemaker',
     repoUrl: 'https://github.com/japgroevemaker/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/noimage.png',
     principleID: 'provide-a-natural-next-step',
     principleName: 'Provide a natural next step',
-    principleDescription: '',
+    principleDescription: 'When the user clicks on one of the buttons, the thing the user expects will happen.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }, {
     username: 'Japgroevemaker',
     repoUrl: 'https://github.com/japgroevemaker/web-design',
-    thumbnail: 'https://cdn.dribbble.com/users/25514/screenshots/4362077/camping_illustration-ramotion.png',
+    thumbnail: '../assets/images/noimage.png',
     principleID: 'appearance-follows-behavior',
     principleName: 'Appearance follows behavior',
-    principleDescription: '',
+    principleDescription: 'When the user makes the photo bigger, it shows three buttons. One in the top left corner, one on the left of the photo and one on the right of the photo. These buttons don\'t really need explanation because they are patterns.',
     likes: Math.floor(Math.random() * 100) + 1,
     dislikes: Math.floor(Math.random() * 100) + 1
   }];
@@ -883,14 +883,22 @@
   var generatePrinciplesList = function generatePrinciplesList(data) {
     var counter = 1;
 
-    document.querySelector('main').appendChild(article({ id: 'introduction' }, [h2('Hello and Welcome 👋'), p('Students from the minor "Web Design" at Amsterdam\'s University of' + ' Applied Sciences were given the task to come up with intuitive ' + 'and pleasurable user interface solutions. The students were ' + 'given two days to create a demo version of their solutions. ' + 'These demos range from video players, to galleries, to booking ' + 'interfaces and much more. The demos are based on Joshua ' + 'Porter\'s "19 Principles of User Interface Design".'), div([button({ id: 'sortByNew' }, 'Sort by New'), button({ id: 'sortByOld' }, 'Sort by Old'), button({ id: 'sortByLikes' }, 'Sort by Likes'), button({ id: 'sortByDislikes' }, 'Sort by Dislikes'), button({ id: 'sortByScore' }, 'Sort by Score')])]));
+    document.querySelector('main').appendChild(article({ id: 'introduction' }, [h2('Hello and Welcome 👋'), p('Students from the minor "Web Design" at Amsterdam\'s University of' + ' Applied Sciences were given the task to come up with intuitive ' + 'and pleasurable user interface solutions. The students were ' + 'given two days to create a demo version of their solutions. ' + 'These demos range from video players, to galleries, to booking ' + 'interfaces and much more. The demos are based on Joshua ' + 'Porter\'s "19 Principles of User Interface Design".'), a({
+      'className': 'backToNavigation',
+      'data-id': '#introduction',
+      'href': '#'
+    }, 'Back to navigation'), div([button({ id: 'sortByNew' }, 'Sort by New'), button({ id: 'sortByOld' }, 'Sort by Old'), button({ id: 'sortByLikes' }, 'Sort by Likes'), button({ id: 'sortByDislikes' }, 'Sort by Dislikes'), button({ id: 'sortByScore' }, 'Sort by Score')])]));
 
     articles.push(document.getElementById('introduction'));
 
     return data.forEach(function (principle) {
       var elem = article({
         id: stringToID(principle.name)
-      }, [h2([span('' + counter), '' + principle.name]), p(principle.body), ol('.examples-list')]);
+      }, [h2([span('' + counter), '' + principle.name]), p(principle.body), a({
+        'className': 'backToNavigation',
+        'data-id': '#' + stringToID(principle.name),
+        'href': '#'
+      }, 'Back to navigation'), ol('.examples-list')]);
 
       document.querySelector('main').appendChild(elem);
       articles.push(elem);
@@ -909,14 +917,6 @@
         href: '#' + stringToID(principle.name)
       }, [strong(counter), principle.name]));
 
-      elem.querySelector('a').addEventListener('focus', function (link) {
-        link.target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'center',
-          inline: 'center'
-        });
-      });
-
       document.querySelector('#mainNavigation').appendChild(elem);
       navItems.push(elem.querySelector('a'));
       counter++;
@@ -929,14 +929,6 @@
     });
     data.forEach(function (example) {
       var elem = li([a({ href: '#detailsPage' }, img({ src: example.thumbnail })), button('❤️ Like'), span('\uD83C\uDFC6 ' + (example.likes - example.dislikes)), button('💔 Dislike')]);
-
-      elem.querySelector('a').addEventListener('focus', function (link) {
-        link.target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'center',
-          inline: 'center'
-        });
-      });
 
       elem.querySelector('a').addEventListener('click', function (link) {
         generateDetailsPage(example.username, example.principleID, examplesData);
@@ -1101,6 +1093,33 @@
   document.getElementById('sortByScore').addEventListener('click', function () {
     window.location.hash = '#clarity-is-job-1';
     sortExamplesByScore(examplesData);
+  });
+
+  document.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('focus', function (link) {
+      link.target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+        inline: 'center'
+      });
+    });
+  });
+
+  document.querySelectorAll('#introduction button').forEach(function (link) {
+    link.addEventListener('focus', function (link) {
+      link.target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+        inline: 'center'
+      });
+    });
+  });
+
+  document.querySelectorAll('.backToNavigation').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector('nav [href="' + link.dataset.id + '"]').focus();
+    });
   });
 
 }());

@@ -57,29 +57,35 @@ const stringToID = (s) => {
 const generatePrinciplesList = (data) => {
   let counter = 1;
 
-  document
-    .querySelector('main')
-    .appendChild(
-      article({id: 'introduction'}, [
-        h2('Hello and Welcome 👋'),
-        p(
-          'Students from the minor "Web Design" at Amsterdam\'s University of' +
-            ' Applied Sciences were given the task to come up with intuitive ' +
-            'and pleasurable user interface solutions. The students were ' +
-            'given two days to create a demo version of their solutions. ' +
-            'These demos range from video players, to galleries, to booking ' +
-            'interfaces and much more. The demos are based on Joshua ' +
-            'Porter\'s "19 Principles of User Interface Design".'
-        ),
-        div([
-          button({id: 'sortByNew'}, 'Sort by New'),
-          button({id: 'sortByOld'}, 'Sort by Old'),
-          button({id: 'sortByLikes'}, 'Sort by Likes'),
-          button({id: 'sortByDislikes'}, 'Sort by Dislikes'),
-          button({id: 'sortByScore'}, 'Sort by Score'),
-        ]),
-      ])
-    );
+  document.querySelector('main').appendChild(
+    article({id: 'introduction'}, [
+      h2('Hello and Welcome 👋'),
+      p(
+        'Students from the minor "Web Design" at Amsterdam\'s University of' +
+          ' Applied Sciences were given the task to come up with intuitive ' +
+          'and pleasurable user interface solutions. The students were ' +
+          'given two days to create a demo version of their solutions. ' +
+          'These demos range from video players, to galleries, to booking ' +
+          'interfaces and much more. The demos are based on Joshua ' +
+          'Porter\'s "19 Principles of User Interface Design".'
+      ),
+      a(
+        {
+          'className': 'backToNavigation',
+          'data-id': '#introduction',
+          'href': '#',
+        },
+        'Back to navigation'
+      ),
+      div([
+        button({id: 'sortByNew'}, 'Sort by New'),
+        button({id: 'sortByOld'}, 'Sort by Old'),
+        button({id: 'sortByLikes'}, 'Sort by Likes'),
+        button({id: 'sortByDislikes'}, 'Sort by Dislikes'),
+        button({id: 'sortByScore'}, 'Sort by Score'),
+      ]),
+    ])
+  );
 
   articles.push(document.getElementById('introduction'));
 
@@ -91,6 +97,14 @@ const generatePrinciplesList = (data) => {
       [
         h2([span(`${counter}`), `${principle.name}`]),
         p(principle.body),
+        a(
+          {
+            'className': 'backToNavigation',
+            'data-id': `#${stringToID(principle.name)}`,
+            'href': '#',
+          },
+          'Back to navigation'
+        ),
         ol('.examples-list'),
       ]
     );
@@ -117,14 +131,6 @@ const generateMainNavigation = (data) => {
       )
     );
 
-    elem.querySelector('a').addEventListener('focus', (link) => {
-      link.target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center',
-        inline: 'center',
-      });
-    });
-
     document.querySelector('#mainNavigation').appendChild(elem);
     navItems.push(elem.querySelector('a'));
     counter++;
@@ -142,14 +148,6 @@ const generateExamples = (data) => {
       span(`🏆 ${example.likes - example.dislikes}`),
       button('💔 Dislike'),
     ]);
-
-    elem.querySelector('a').addEventListener('focus', (link) => {
-      link.target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center',
-        inline: 'center',
-      });
-    });
 
     elem.querySelector('a').addEventListener('click', (link) => {
       generateDetailsPage(example.username, example.principleID, examplesData);
@@ -292,4 +290,31 @@ document.getElementById('sortByDislikes').addEventListener('click', () => {
 document.getElementById('sortByScore').addEventListener('click', () => {
   window.location.hash = '#clarity-is-job-1';
   sortExamplesByScore(examplesData);
+});
+
+document.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('focus', (link) => {
+    link.target.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center',
+      inline: 'center',
+    });
+  });
+});
+
+document.querySelectorAll('#introduction button').forEach((link) => {
+  link.addEventListener('focus', (link) => {
+    link.target.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center',
+      inline: 'center',
+    });
+  });
+});
+
+document.querySelectorAll('.backToNavigation').forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelector(`nav [href="${link.dataset.id}"]`).focus();
+  });
 });
