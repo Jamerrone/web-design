@@ -122,11 +122,11 @@ I will be honest with you, the testing did not go as planned. First of all, this
 
 Anyway, he actually enjoyed my prototype overall, there where however two problems that fucked up his experience a bit. First of all, I have a vertical scrollable navigation on the left side. This navigation is positioned fixed and a scrollbar appears when too many items are introduced, quite normal, right? Well because of the scrollbar Marijn could not use his spacebar in order to navigate through the content, the spacebar actually scrolled the navigation. The other problem where horizontal scrolling containers. In order to keep the page length as short as possible, I had built a horizontally scrollable container where users could scroll through every example for each principle. In this case, he had to use his trackpad.
 
-After giving it some thoughts, I came up with the following solutions. Some of them were actually introduced to the current prototype, however, most of them were left out for the next time.
+After giving it some more thoughts, I came up with the following solutions. None of them are currently implemented however I will keep them in mind for the next time.
 
 **Vertical Sidebar/Navigation:**
 
-* [x] Try to make the menu items smaller in order to avoid the vertical scrollbar.
+* [ ] Try to make the menu items smaller in order to avoid the vertical scrollbar.
 * [ ] I can force the focus state on the main content by default, doing so will force the spacebar to scroll the content and not the navigation. This should, however, introduce a problem. It will be harder to navigate to the navigation using the tab key. Using links that redirect the focus state back to the navigations could be a solution but this idea will need some testing.
 * [ ] Avoid complex and long navigations. We could use dropdowns for example or simply avoid vertical navigations at all. (Keep it simple.)
 * [ ] Avoid using position fix, this will eliminate the scrollbar but users will need to scroll back up in order to navigate. (I don't think this is a real fix.)
