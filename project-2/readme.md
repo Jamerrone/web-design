@@ -22,6 +22,10 @@ Live deployed demo can be found [here](https://dist-dxjcojrvwp.now.sh/).
 
 <!-- /TOC -->
 
+<p align="center">
+  <img src="./cover.gif"/>
+</p>
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -77,7 +81,7 @@ Marijn is a genius programmer, however, because of his motor disability he is ex
 
 ### Welcome Page
 
-<p align="center" style="margin: 2.5rem 0;">
+<p align="center">
   <img src="./welcome.png"/>
 </p>
 
@@ -85,7 +89,7 @@ This is the first screen that each user will see. On this screen, they can find 
 
 ### Overview Page
 
-<p align="center" style="margin: 2.5rem 0;">
+<p align="center">
   <img src="./overview.png"/>
 </p>
 
@@ -93,7 +97,7 @@ Each overview page contains the principal name, its description, and a horizonta
 
 ### Details Page
 
-<p align="center" style="margin: 2.5rem 0;">
+<p align="center">
   <img src="./detail.png"/>
 </p>
 
@@ -112,7 +116,7 @@ The details page is split into two halves. The first half features a huge cover 
 
 ## User Testing
 
-<p align="center" style="margin: 5rem 0;">
+<p align="center">
   <img src="./marijn.jpeg"/>
 </p>
 
